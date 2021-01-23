@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "497357435658",
+    "project_id": "oncologia-austral",
+    "storage_bucket": "oncologia-austral.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497357435658:android:fb254df511547c22fc40f3",
+        "android_client_info": {
+          "package_name": "com.example.apphospital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497357435658-js6ekdsm77p4rdnp8kev6noj95kukql6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9R2yyz_8uEWmVn1-_caW81W7kiS3QdXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497357435658-js6ekdsm77p4rdnp8kev6noj95kukql6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
