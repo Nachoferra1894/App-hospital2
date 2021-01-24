@@ -13,10 +13,11 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="156dp"
             android:layout_marginTop="0dp"
-            android:src="@drawable/violeta" />
+            android:src="@drawable/datos_img" />
 
         <TextView
             android:layout_marginLeft="75dp"
