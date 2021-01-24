@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">App Hospital</string>
+
+    <string-array name="sexos">
+        <item>Hombre</item>
+        <item>Mujer</item>
+        <item>Otro</item>
+    </string-array>
 </resources>

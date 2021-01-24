@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppHospital">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Splashscreen"
+        <activity android:name=".datosDelUsuario"></activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Splashscreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

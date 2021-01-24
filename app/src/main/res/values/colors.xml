@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lightblue">#A0ECFF</color>
     <color name="purple_fabri">#B189F8</color>
+    <color name="azul_registro">#2bb1ff</color>
+    <color name="orange">#FFB13A</color>
 </resources>
