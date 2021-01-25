@@ -43,12 +43,14 @@
             android:layout_marginTop="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre y apellido" />
+            android:text="Nombre y apellido"
+            android:textColor="@color/gray"/>
 
         <EditText
             android:id="@+id/nombreYApellido_edtxt_id"
             android:layout_width="300dp"
             android:layout_height="40dp"
+            android:paddingLeft="5dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_edittext"/>
 
@@ -59,14 +61,61 @@
             android:text="Genero" />
 
         <Spinner
+
             android:id="@+id/sexos_spnr"
             android:layout_marginTop="10dp"
             android:layout_width="300dp"
             android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/gray"
             android:background="@drawable/rounded_edittext"/>
 
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/email_edtxt_id"
+            android:textColor="@color/gray"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/rounded_edittext"/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/datePicker_btn_id"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:textColor="@color/gray"
+                android:id="@+id/date_txtVw"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:paddingTop="9dp"
+                android:textSize="20sp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/rounded_edittext"/>
+
+        </RelativeLayout>
+
+
     </LinearLayout>
-
-
 
 </LinearLayout>

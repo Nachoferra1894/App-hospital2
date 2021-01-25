@@ -11,6 +11,7 @@
         android:theme="@style/Theme.AppHospital">
         <activity android:name=".RegisterDetailsForm"></activity>
         <activity android:name=".MainActivity" />
+        <activity android:name=".datosDelUsuario"/>
         <activity
             android:name=".Splashscreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
