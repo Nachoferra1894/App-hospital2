@@ -40,6 +40,8 @@ class datosDelUsuario : AppCompatActivity() {
                 date_txtVw.setText("" + mDay + "/" + (mMonth+1) + "/" + mYear)
             }, year, month, day)
             dpd.show()
+
+            //Pusheo de prueba
         }
     }
 }
