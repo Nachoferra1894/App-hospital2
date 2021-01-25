@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppHospital">
-        <activity android:name=".datosDelUsuario"></activity>
+        <activity android:name=".RegisterDetailsForm"></activity>
         <activity android:name=".MainActivity" />
         <activity
             android:name=".Splashscreen"
