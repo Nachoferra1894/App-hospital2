@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:layout_gravity="center_horizontal"
         android:background="@color/purple1"
         android:orientation="horizontal">
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            android:drawableStart="@drawable/ic_baseline_account_circle_24"
+            android:drawableStart="@drawable/ic_user"
             android:drawablePadding="10dp"
             android:gravity="center"
             android:text="Datos del Usuario"
@@ -37,7 +37,7 @@
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
             app:srcCompat="@drawable/register_deco" />
     </LinearLayout>
 
@@ -45,15 +45,15 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginLeft="0px"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:text="Nombre y apellido"
-            android:textColor="@color/gray" />
+            android:textColor="@color/gray"
+            android:textSize="16dp" />
 
         <EditText
             android:id="@+id/nombreYApellido_edtxt_id"
@@ -66,8 +66,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Genero" />
+            android:layout_marginTop="25dp"
+            android:text="Genero"
+            android:textSize="16dp" />
 
         <Spinner
 
@@ -82,8 +83,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="Email" />
+            android:layout_marginTop="25dp"
+            android:text="Email"
+            android:textSize="16dp" />
 
         <EditText
             android:id="@+id/email_edtxt_id"
@@ -98,8 +100,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="Fecha" />
+            android:layout_marginTop="25dp"
+            android:text="Fecha"
+            android:textSize="16dp" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -108,14 +111,15 @@
             <Button
                 android:id="@+id/datePicker_btn_id"
                 android:layout_width="300dp"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:background="@android:color/transparent" />
 
             <TextView
                 android:id="@+id/date_txtVw"
                 android:layout_width="300dp"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_edittext"
                 android:paddingLeft="5dp"
                 android:paddingTop="10dp"
@@ -123,6 +127,18 @@
                 android:textSize="20sp" />
 
         </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_btn_login2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:height="52dp"
+            android:background="@drawable/btn_rounded_secondarycolor"
+            android:text="CONTINUAR"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="OnClick" />
 
 
     </LinearLayout>
