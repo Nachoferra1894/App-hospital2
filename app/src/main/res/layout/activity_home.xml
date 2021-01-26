@@ -10,13 +10,13 @@
     <LinearLayout
         android:id="@+id/homeLayout1"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:orientation="vertical">
 
         <ImageView
             android:layout_margin="15dp"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/circleshape"
             android:backgroundTint="@color/purple3"/>
 
@@ -25,7 +25,7 @@
     <LinearLayout
         android:id="@+id/homeLayout2"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="130dp"
         android:layout_below="@+id/homeLayout1"
         android:orientation="vertical">
 
@@ -35,7 +35,7 @@
             android:layout_marginLeft="25dp"
             android:layout_marginTop="30dp"
             android:text="Hola,"
-            android:textSize="33sp" />
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/homeFirstName_txtVw"
@@ -44,7 +44,7 @@
             android:layout_marginLeft="25dp"
             android:layout_marginTop="0dp"
             android:text="First Name!"
-            android:textSize="40sp"
+            android:textSize="35sp"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -61,35 +61,83 @@
         <View
             android:scaleType="fitXY"
             android:layout_gravity="center_horizontal"
-            android:layout_width="350dp"
-            android:layout_height="80dp"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
             android:background="@drawable/rounded_edittext"
             android:backgroundTint="@color/orange"/>
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_marginTop="20dp"
         android:id="@+id/homeLayout4"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_centerInParent="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/homeLayout3"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:background="@drawable/btn_rounded_primarycolor">
 
-        <View
-            android:id="@+id/home1_vw"
-            android:scaleType="fitXY"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="350dp"
-            android:layout_height="150dp"
-            android:background="@drawable/rounded_edittext"
-            android:backgroundTint="@color/purple1"/>
 
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/homeLayout6"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-    <LinearLayout
+            <TextView
+                android:textColor="@color/white"
+                android:padding="7dp"
+                android:id="@+id/home_txtVw1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Como te encuentras hoy?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_marginTop="-3dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Completa y cuentanos como te has sentido hoy!"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="COMPLETAR"
+                android:textSize="10sp"
+                android:textColor="@color/purple1"
+                android:background="@drawable/btn_rounded_white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@id/homeLayout6"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chicos_saltando"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_marginTop="20dp"
         android:id="@+id/homeLayout5"
         android:layout_width="wrap_content"
@@ -101,52 +149,36 @@
         <View
             android:scaleType="fitXY"
             android:layout_gravity="center_horizontal"
-            android:layout_width="350dp"
+            android:layout_width="300dp"
             android:layout_height="150dp"
             android:background="@drawable/rounded_edittext"
             android:backgroundTint="@color/purple1"/>
 
-    </LinearLayout>
-
-    <RelativeLayout
-        android:padding="10dp"
-        android:layout_alignLeft="@+id/homeLayout4"
-        android:layout_alignRight="@+id/homeLayout4"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_alignTop="@+id/homeLayout4"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/home_txtVw1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Como te encuentras hoy?"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_marginTop="5sp"
-            android:id="@+id/home_txtVw2"
-            android:layout_below="@id/home_txtVw1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="10sp"
-            android:text="Completa este cuestionario y cuentanos como te has" />
-
-        <TextView
-            android:layout_marginTop="2sp"
-            android:layout_below="@id/home_txtVw2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="10sp"
-            android:text="sentido hoy!"/>
-
     </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/homeLayout5">
+
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circleshape"
+        android:backgroundTint="@color/orange"
+        android:text=" ? "
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    </LinearLayout>
 
 
 
