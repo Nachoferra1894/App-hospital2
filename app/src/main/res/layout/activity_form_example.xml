@@ -2,5 +2,88 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/purple1">
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/id_smoke_img"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/ic_smoke"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_alignTop="@id/id_smoke_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿FUISTE/ERES FUMADOR?"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
+            </LinearLayout>
 
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/register_deco"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top1">
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="280dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_smoke1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Fumo actualmente"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_edittext"/>
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/btn_smoke2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Fumaba"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_edittext"/>
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/btn_smoke3"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="No"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_edittext"/>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
 </RelativeLayout>
