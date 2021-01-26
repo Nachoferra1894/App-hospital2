@@ -12,6 +12,9 @@
         <activity
             android:name=".RegisterDetailsForm"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Home"
+            android:screenOrientation="portrait"/>
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".datosDelUsuario"
