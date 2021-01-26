@@ -28,7 +28,7 @@ class RegisterDetailsForm : AppCompatActivity() {
         for (text in mDots){
             text.text = Html.fromHtml("&#8226")
             text.textSize = 35F
-            text.setTextColor(resources.getColor(R.color.teal_700))
+            text.setTextColor(resources.getColor(R.color.purple2))
 
             regform_ll_mdot.addView(text)
         }

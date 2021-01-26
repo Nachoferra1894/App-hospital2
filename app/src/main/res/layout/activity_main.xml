@@ -8,16 +8,20 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/purple1" />
 
         <ImageView
-            android:scaleType="centerCrop"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:src="@drawable/inicio_img" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/loging_deco" />
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -35,7 +39,7 @@
             app:layout_constraintHorizontal_bias=".5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            app:layout_constraintVertical_bias="0.25">
+            app:layout_constraintVertical_bias="0.32">
 
             <TextView
                 android:id="@+id/login_txt_register"
@@ -48,11 +52,13 @@
 
             <Button
                 android:id="@+id/login_btn_login"
-                android:layout_width="200dp"
+                android:height="52dp"
+                android:background="@drawable/btn_rounded_secondarycolor"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:background="@color/orange"
-                android:text="Ingresar"
+                android:text="INGRESAR"
+                android:textStyle="bold"
                 android:textSize="15dp"
                 tools:ignore="OnClick" />
         </LinearLayout>
@@ -74,14 +80,18 @@
                 android:orientation="vertical">
 
                 <TextView
+                    style=""
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Id de paciente"></TextView>
+                    android:paddingBottom="5dp"
+                    android:text="Id de paciente"
+                    android:textSize="18dp" />
 
                 <EditText
                     android:id="@+id/login_edtxt_id"
                     android:layout_width="300dp"
-                    android:layout_height="wrap_content"></EditText>
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edittext" />
 
             </LinearLayout>
 
@@ -94,12 +104,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contraseña"></TextView>
+                    android:paddingBottom="5dp"
+                    android:text="Contraseña"
+                    android:textSize="18dp" />
 
                 <EditText
                     android:id="@+id/login_edtxt_password"
                     android:layout_width="300dp"
-                    android:layout_height="wrap_content"></EditText>
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_edittext" />
 
             </LinearLayout>
 
@@ -120,7 +133,7 @@
             android:layout_marginEnd="150dp"
             android:layout_marginBottom="60dp"
             android:text="Iniciar Sesion"
-            android:textColor="@color/purple_fabri"
+            android:textColor="@color/purple1"
             android:textSize="30dp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
@@ -149,7 +162,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:text="Es una emergencia?"
-                android:textColor="@color/purple_fabri"
+                android:textColor="@color/purple1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -36,7 +36,7 @@ class datosDelUsuario : AppCompatActivity() {
         val day = c.get(Calendar.DAY_OF_MONTH)
 
         datePicker_btn_id.setOnClickListener {
-            val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener { view, mYear, mMonth, mDay ->
+            val dpd = DatePickerDialog(this,R.style.my_dialog_theme, DatePickerDialog.OnDateSetListener { view, mYear, mMonth, mDay ->
                 date_txtVw.setText("" + mDay + "/" + (mMonth+1) + "/" + mYear)
             }, year, month, day)
             dpd.show()
