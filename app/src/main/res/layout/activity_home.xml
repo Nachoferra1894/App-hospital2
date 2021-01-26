@@ -134,28 +134,74 @@
 
         </LinearLayout>
 
-
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_marginTop="20dp"
-        android:id="@+id/homeLayout5"
-        android:layout_width="wrap_content"
+        android:id="@+id/homeLayout7"
+        android:layout_width="300dp"
         android:layout_centerInParent="true"
         android:layout_height="wrap_content"
         android:layout_below="@+id/homeLayout4"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:background="@drawable/btn_rounded_primarycolor">
 
-        <View
-            android:scaleType="fitXY"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="300dp"
-            android:layout_height="150dp"
-            android:background="@drawable/rounded_edittext"
-            android:backgroundTint="@color/purple1"/>
+
+        <LinearLayout
+            android:id="@+id/homeLayout8"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/white"
+                android:padding="7dp"
+                android:id="@+id/home_txtVw3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Como te encuentras hoy?"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_marginTop="-3dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Completa y cuentanos como te has sentido hoy!"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="COMPLETAR"
+                android:textSize="10sp"
+                android:textColor="@color/purple1"
+                android:background="@drawable/btn_rounded_white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@id/homeLayout8"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chicos_saltando"/>
+
+        </LinearLayout>
 
     </RelativeLayout>
-
 
 
     <LinearLayout
@@ -163,7 +209,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_alignParentEnd="true"
-        android:layout_below="@id/homeLayout5">
+        android:layout_below="@id/homeLayout7">
 
     <TextView
         android:layout_margin="15dp"
