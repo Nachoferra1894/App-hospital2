@@ -17,6 +17,10 @@ class MainActivity : AppCompatActivity() {
         tv_click_me.setOnClickListener {
             startActivity(Intent(this,datosDelUsuario::class.java))
         }
+
+        login_btn_login.setOnClickListener {
+            startActivity(Intent(this,Home::class.java))
+        }
     }
 
 }
