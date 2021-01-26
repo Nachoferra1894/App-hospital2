@@ -100,14 +100,4 @@
         </LinearLayout>
 
     </RelativeLayout>
-    <LinearLayout
-        android:id="@+id/id_dot"
-        android:orientation="horizontal"
-        android:layout_marginBottom="30dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_width="300dp"
-        android:layout_height="50dp">
-
-    </LinearLayout>
 </RelativeLayout>

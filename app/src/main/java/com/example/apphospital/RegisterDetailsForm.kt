@@ -10,8 +10,6 @@ import kotlinx.android.synthetic.main.activity_register_details_form.*
 
 class RegisterDetailsForm : AppCompatActivity() {
 
-    private lateinit var viewPager : ViewPager
-
     private lateinit var sliderAdapter:SliderAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,10 +27,10 @@ class RegisterDetailsForm : AppCompatActivity() {
             }
 
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
-                addDots(position)
+
             }
             override fun onPageSelected(position: Int) {
-
+                addDots(position)
             }
 
         })
@@ -43,7 +41,8 @@ class RegisterDetailsForm : AppCompatActivity() {
     @SuppressLint("ResourceAsColor")
     private fun addDots(position: Int) {
 
-        val mDots = Array(3) { TextView(this) }
+        val mDots = Array(2) { TextView(this) }
+        regform_ll_mdot.removeAllViews()
 
         for (text in mDots){
             text.text = Html.fromHtml("&#8226")
@@ -53,8 +52,8 @@ class RegisterDetailsForm : AppCompatActivity() {
             regform_ll_mdot.addView(text)
         }
 
-        if(position > 0){
-            mDots[position].setTextColor(R.color.orange)
+        if(mDots.isNotEmpty()){
+            mDots[position].setTextColor(resources.getColor(R.color.orange))
         }
 
     }
