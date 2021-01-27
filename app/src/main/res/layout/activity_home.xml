@@ -6,6 +6,29 @@
     android:layout_height="wrap_content"
     tools:context=".Home"
     android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/bottom_cont"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EEE6FE"
+        android:orientation="vertical"/>
+    <ImageView
+        android:layout_above="@id/bottom_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_home1"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_cont"
+        android:layout_marginBottom="-2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/back_home2" />
+
 
     <LinearLayout
         android:id="@+id/homeLayout1"
@@ -17,39 +40,39 @@
             android:layout_margin="15dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/circleshape"
-            android:backgroundTint="@color/purple3"/>
+            android:src="@drawable/avatar1"/>
+
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/homeLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/homeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="30dp"
             android:text="Hola,"
-            android:textSize="30sp" />
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/homeFirstName_txtVw"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
             android:layout_marginTop="0dp"
-            android:text="First Name!"
-            android:textSize="35sp"
+            android:text="Firstname!"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginTop="40dp"
         android:id="@+id/homeLayout3"
         android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
@@ -59,145 +82,84 @@
 
 
         <View
-            android:scaleType="fitXY"
+            android:layout_width="340dp"
+            android:layout_height="70dp"
             android:layout_gravity="center_horizontal"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:background="@drawable/rounded_edittext"
-            android:backgroundTint="@color/orange"/>
+            android:background="@drawable/btn_rounded_primarycolorhome"
+            android:backgroundTint="@color/orange"
+            android:scaleType="fitXY" />
 
     </LinearLayout>
 
     <RelativeLayout
-        android:layout_marginTop="20dp"
         android:id="@+id/homeLayout4"
-        android:layout_width="300dp"
-        android:layout_centerInParent="true"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/homeLayout3"
+        android:layout_below="@id/homeLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_rounded_primarycolorhome"
         android:orientation="horizontal"
-        android:background="@drawable/btn_rounded_primarycolor">
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp">
 
 
         <LinearLayout
             android:id="@+id/homeLayout6"
-            android:padding="5dp"
-            android:layout_alignParentLeft="true"
+            android:layout_width="190dp"
+
             android:layout_height="wrap_content"
-            android:layout_width="180dp"
-            android:gravity="center_horizontal"
+            android:layout_alignParentLeft="true"
+            android:gravity="start"
             android:orientation="vertical">
 
             <TextView
-                android:textColor="@color/white"
-                android:padding="7dp"
                 android:id="@+id/home_txtVw1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
                 android:text="Como te encuentras hoy?"
+                android:textColor="@color/white"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:textColor="@color/white"
-                android:layout_marginTop="-3dp"
-                android:padding="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-thin"
                 android:text="Completa y cuentanos como te has sentido hoy!"
+                android:textColor="@color/white"
+                android:textSize="10sp"
                 android:textStyle="bold" />
 
             <Button
-                android:layout_marginTop="5dp"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_rounded_white"
                 android:text="COMPLETAR"
-                android:textSize="10sp"
                 android:textColor="@color/purple1"
-                android:background="@drawable/btn_rounded_white"/>
+                android:textSize="11dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_height="match_parent"
             android:layout_alignBottom="@id/homeLayout6"
-            android:layout_alignParentRight="true">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/chicos_saltando"/>
-
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_marginTop="20dp"
-        android:id="@+id/homeLayout7"
-        android:layout_width="300dp"
-        android:layout_centerInParent="true"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/homeLayout4"
-        android:orientation="horizontal"
-        android:background="@drawable/btn_rounded_primarycolor">
-
-
-        <LinearLayout
-            android:id="@+id/homeLayout8"
-            android:padding="5dp"
-            android:layout_alignParentLeft="true"
-            android:layout_height="wrap_content"
-            android:layout_width="180dp"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
-
-            <TextView
-                android:textColor="@color/white"
-                android:padding="7dp"
-                android:id="@+id/home_txtVw3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="Como te encuentras hoy?"
-                android:textStyle="bold" />
-
-            <TextView
-                android:textColor="@color/white"
-                android:layout_marginTop="-3dp"
-                android:padding="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="10sp"
-                android:text="Completa y cuentanos como te has sentido hoy!"
-                android:textStyle="bold" />
-
-            <Button
-                android:layout_marginTop="5dp"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="COMPLETAR"
-                android:textSize="10sp"
-                android:textColor="@color/purple1"
-                android:background="@drawable/btn_rounded_white"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_alignBottom="@id/homeLayout8"
-            android:layout_alignParentRight="true">
+            android:layout_alignParentRight="true"
+            android:gravity="center">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/chicos_saltando"/>
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/chicos_saltando" />
+
 
         </LinearLayout>
 
@@ -205,11 +167,12 @@
 
 
     <LinearLayout
+        android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_alignParentEnd="true"
-        android:layout_below="@id/homeLayout7">
+        >
 
     <TextView
         android:layout_margin="15dp"
