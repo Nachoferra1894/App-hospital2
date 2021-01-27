@@ -6,13 +6,14 @@
     android:layout_height="wrap_content"
     tools:context=".Home"
     android:orientation="vertical">
+
     <LinearLayout
         android:id="@+id/bottom_cont"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="350dp"
         android:layout_alignParentBottom="true"
         android:background="#EEE6FE"
-        android:orientation="vertical"/>
+        android:orientation="vertical" />
     <ImageView
         android:layout_above="@id/bottom_cont"
         android:layout_width="match_parent"
@@ -33,14 +34,16 @@
     <LinearLayout
         android:id="@+id/homeLayout1"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:orientation="vertical">
 
         <ImageView
-            android:layout_margin="15dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/avatar1"/>
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/avatar1" />
 
 
     </LinearLayout>

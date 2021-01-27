@@ -28,14 +28,14 @@
             android:layout_height="wrap_content"
             android:text="Firstname"
             android:textSize="25dp"
-            android:textColor="@color/purple3"
+            android:textColor="@color/purple4"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=", eres tu?"
             android:textSize="25dp"
-            android:textColor="@color/purple3" />
+            android:textColor="@color/purple4" />
     </LinearLayout>
 
     <LinearLayout
@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="FIRST SECOND"
-            android:textColor="@color/purple3"
+            android:textColor="@color/purple4"
             android:textSize="18dp"
             android:textStyle="bold"/>
     </LinearLayout>
