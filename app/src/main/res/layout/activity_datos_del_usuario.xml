@@ -61,7 +61,10 @@
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_edittext"
-            android:paddingLeft="5dp" />
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -71,7 +74,6 @@
             android:textSize="16dp" />
 
         <Spinner
-
             android:id="@+id/sexos_spnr"
             android:layout_width="300dp"
             android:layout_height="50dp"
@@ -95,6 +97,7 @@
             android:background="@drawable/rounded_edittext"
             android:inputType="textEmailAddress"
             android:paddingLeft="5dp"
+            android:textSize="20sp"
             android:textColor="@color/gray" />
 
         <TextView
