@@ -26,7 +26,7 @@ class datosDelUsuario : AppCompatActivity() {
 
         val sexos = resources.getStringArray(R.array.sexos)
 
-        val adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, sexos)
+        val adaptador = ArrayAdapter(this,R.layout.spinner_item,sexos)
 
         spinner.adapter = adaptador
 

@@ -64,15 +64,4 @@ class RegisterDetailsForm : AppCompatActivity() {
         }
 
     }
-
-
-
-
-
-
-
-
-    
-
-
 }
