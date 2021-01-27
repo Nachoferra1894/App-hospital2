@@ -1,12 +1,14 @@
 package com.example.apphospital
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.Spinner
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import kotlinx.android.synthetic.main.activity_datos_del_usuario.*
 import java.util.*
@@ -41,5 +43,18 @@ class datosDelUsuario : AppCompatActivity() {
             }, year, month, day)
             dpd.show()
         }
+
+        login_btn_login2.setOnClickListener {
+            if (nombreYApellido_edtxt_id.text.isEmpty() || email_edtxt_id.text.isEmpty() || date_txtVw.text.isEmpty()) {
+                val text = "Completa todos los datos antes de seguir"
+                val duration = Toast.LENGTH_SHORT
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
+            } else {
+                startActivity(Intent(this,RegisterDetailsForm::class.java))
+            }
+
+        }
+
     }
 }

@@ -21,10 +21,6 @@ class MainActivity : AppCompatActivity() {
         login_btn_login.setOnClickListener {
             startActivity(Intent(this,Home::class.java))
         }
-
-        login_txt_register.setOnClickListener {
-            startActivity(Intent(this,RegisterDetailsForm::class.java))
-        }
     }
 
 }
