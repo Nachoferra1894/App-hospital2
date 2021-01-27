@@ -16,6 +16,7 @@
         android:scaleType="fitXY"
         android:src="@drawable/back_ilu2"/>
     <ImageView
+        android:id="@+id/id_2"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,15 +31,16 @@
         android:textStyle="bold"
         android:textSize="35dp"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/imgid"
-        android:layout_marginBottom="80dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"/>
 
     <ImageView
         android:id="@+id/imgid"
         android:layout_width="wrap_content"
         android:layout_height="210dp"
+        android:layout_above="@id/id_2"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginBottom="80dp"
         android:src="@drawable/illust_terminado"/>
     <TextView
         android:layout_width="wrap_content"
