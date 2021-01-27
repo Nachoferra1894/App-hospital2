@@ -22,17 +22,18 @@
                     android:id="@+id/id_smoke_img"
                     android:layout_width="140dp"
                     android:layout_height="140dp"
-                    android:src="@drawable/ic_smoke"/>
+                    android:src="@drawable/ic_diabetic"/>
+
                 <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_alignTop="@id/id_smoke_img"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="¿FUISTE/ERES FUMADOR?"
+                    android:layout_alignTop="@id/id_smoke_img"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="¿TENES DIABETES?"
                     android:textColor="@color/white"
-                    android:textStyle="bold"
                     android:textSize="30dp"
-                    android:gravity="center"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
         </RelativeLayout>
@@ -56,25 +57,17 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/btn_smoke1"
+                android:id="@+id/btn_diabetesyes"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
-                android:text="Fumo actualmente"
+                android:background="@drawable/rounded_edittext"
+                android:text="Si"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:background="@drawable/rounded_edittext"/>
+                android:textStyle="bold" />
+
             <Button
                 android:layout_marginTop="30dp"
-                android:id="@+id/btn_smoke2"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
-                android:text="Fumaba"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:background="@drawable/rounded_edittext"/>
-            <Button
-                android:layout_marginTop="30dp"
-                android:id="@+id/btn_smoke3"
+                android:id="@+id/btn_diabetesno"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:text="No"

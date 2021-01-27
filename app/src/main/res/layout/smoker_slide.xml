@@ -1,63 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¿FUISTE/ERES FUMADOR?"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/smokeslide_img"
-        app:layout_constraintVertical_bias="0.19999999" />
-
-    <ImageView
-        android:id="@+id/smokeslide_img"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13999999"
-        app:srcCompat="@drawable/ic_smoke" />
-
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.26999998">
-
-        <Button
-            android:id="@+id/smokerslide_btn_yes"
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:orientation="vertical">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Soy" />
+            android:layout_height="300dp"
+            android:background="@color/purple1">
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/id_smoke_img"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/ic_smoke"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_alignTop="@id/id_smoke_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿FUISTE/ERES FUMADOR?"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
+            </LinearLayout>
 
-        <Button
-            android:id="@+id/smokerslide_btn_no"
+        </RelativeLayout>
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="No fui fumador" />
-
-        <Button
-            android:id="@+id/smokerslide_btn_was"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fui" />
+            android:layout_height="80dp"
+            android:src="@drawable/register_deco"
+            android:scaleType="fitXY"/>
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top1">
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="280dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_diabetesyes"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Fumo actualmente"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_edittext"/>
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/btn_smoke2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Fumaba"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_edittext"/>
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/btn_diabetesno"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="No"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_edittext"/>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
