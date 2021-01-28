@@ -12,9 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val tv_click_me: TextView = findViewById<TextView>(R.id.login_txt_register)
-
-        tv_click_me.setOnClickListener {
+        login_txt_register.setOnClickListener {
             startActivity(Intent(this,datosDelUsuario::class.java))
         }
 

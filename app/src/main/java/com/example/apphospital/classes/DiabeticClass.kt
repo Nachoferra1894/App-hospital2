@@ -1,5 +1,7 @@
 package com.example.apphospital.classes
 
-class DiabeticClass {
-    constructor(option:Boolean,medication:String)
+import kotlinx.serialization.Serializable
+
+@Serializable
+class DiabeticClass(var option:Boolean,var medication:String) {
 }

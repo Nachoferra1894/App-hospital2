@@ -10,6 +10,7 @@ import android.widget.ListView
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.core.view.get
 import kotlinx.android.synthetic.main.activity_datos_del_usuario.*
 import java.util.*
 
@@ -37,9 +38,17 @@ class datosDelUsuario : AppCompatActivity() {
         val month = c.get(Calendar.MONTH)
         val day = c.get(Calendar.DAY_OF_MONTH)
 
+        var yearSelected: Int = 0
+        var monthSelected: Int = 0
+        var daySelected: Int = 0
+
+
         datePicker_btn_id.setOnClickListener {
             val dpd = DatePickerDialog(this,R.style.my_dialog_theme, DatePickerDialog.OnDateSetListener { view, mYear, mMonth, mDay ->
-                date_txtVw.setText("" + mDay + "/" + (mMonth+1) + "/" + mYear)
+                daySelected = mDay
+                monthSelected = mMonth+1
+                yearSelected = mYear
+                date_txtVw.setText("" + daySelected + "/" + (monthSelected+1) + "/" + yearSelected)
             }, year, month, day)
             dpd.show()
         }
@@ -51,10 +60,19 @@ class datosDelUsuario : AppCompatActivity() {
                 val toast = Toast.makeText(applicationContext, text, duration)
                 toast.show()
             } else {
-                startActivity(Intent(this,RegisterDetailsForm::class.java))
+                val intent = Intent(this,datosMedicos::class.java)
+
+                intent.putExtra("nombre", nombreYApellido_edtxt_id.text)
+                intent.putExtra("email", email_edtxt_id.text)
+                var isMale = sexos_spnr.selectedItemPosition == 0
+                intent.putExtra("genero", isMale)
+                intent.putExtra("dia", daySelected)
+                intent.putExtra("mes", monthSelected)
+                intent.putExtra("año", yearSelected)
+                intent.putExtra("dni",dni_edtxt_id.text)
+
+                startActivity(intent)
             }
-
         }
-
     }
 }

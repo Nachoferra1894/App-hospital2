@@ -41,7 +41,7 @@ class RegisterDetailsForm : AppCompatActivity() {
     @SuppressLint("ResourceAsColor")
     private fun addDots(position: Int) {
 
-        val mDots = Array(7) { TextView(this) }
+        val mDots = Array(5) { TextView(this) }
         regform_ll_mdot.removeAllViews()
 
         for (text in mDots){
@@ -50,13 +50,6 @@ class RegisterDetailsForm : AppCompatActivity() {
             text.setTextColor(resources.getColor(R.color.azul_registro))
 
             regform_ll_mdot.addView(text)
-        }
-
-        if(position == 0 || position == mDots.size-1){
-            regform_ll_mdot.setBackgroundColor(resources.getColor(R.color.purple1))
-        }
-        else{
-            regform_ll_mdot.setBackgroundColor(resources.getColor(R.color.white))
         }
 
         if(mDots.isNotEmpty()){
