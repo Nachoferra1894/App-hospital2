@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'com.google.gms.google-services' // Google Services plugin
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.4.10'
 }
 
 android {
@@ -51,4 +52,5 @@ dependencies {
     apply plugin: 'kotlin-android'
     apply plugin: 'kotlin-android-extensions'
     implementation 'com.android.support:multidex:1.0.3'
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1"
 }
