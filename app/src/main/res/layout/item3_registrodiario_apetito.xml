@@ -24,13 +24,13 @@
                     android:id="@+id/id_smoke_img"
                     android:layout_width="140dp"
                     android:layout_height="140dp"
-                    android:src="@drawable/ic_child"/>
+                    android:src="@drawable/ic_utensils"/>
                 <TextView
                     android:layout_marginTop="20dp"
                     android:layout_alignTop="@id/id_smoke_img"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ESTADO DE ANIMO"
+                    android:text="APETITO"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:textSize="30dp"
@@ -55,7 +55,7 @@
         >
 
         <LinearLayout
-            android:layout_marginTop="105dp"
+            android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center">
