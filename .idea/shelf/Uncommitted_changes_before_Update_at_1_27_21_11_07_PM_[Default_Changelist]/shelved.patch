@@ -1,0 +1,200 @@
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\n    id 'com.android.application'\n    id 'kotlin-android'\n    id 'com.google.gms.google-services' // Google Services plugin\n    id 'org.jetbrains.kotlin.plugin.serialization' version '1.4.10'\n}\n\nandroid {\n    compileSdkVersion 29\n    buildToolsVersion \"29.0.3\"\n\n    defaultConfig {\n        applicationId \"com.example.apphospital\"\n        minSdkVersion 21\n        targetSdkVersion 29\n        versionCode 1\n        versionName \"1.0\"\n        multiDexEnabled true\n\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\n    }\n\n    buildTypes {\n        release {\n            minifyEnabled false\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\n        }\n    }\n    compileOptions {\n        sourceCompatibility JavaVersion.VERSION_1_8\n        targetCompatibility JavaVersion.VERSION_1_8\n    }\n    kotlinOptions {\n        jvmTarget = '1.8'\n    }\n\n}\n\ndependencies {\n\n    implementation \"org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version\"\n    implementation 'androidx.core:core-ktx:1.3.2'\n    implementation 'androidx.appcompat:appcompat:1.2.0'\n    implementation 'com.google.android.material:material:1.2.1'\n    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'\n    implementation 'com.google.firebase:firebase-auth:20.0.2'\n    implementation 'com.google.firebase:firebase-database:19.6.0'\n    testImplementation 'junit:junit:4.13.1'\n    androidTestImplementation 'androidx.test.ext:junit:1.1.2'\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'\n    apply plugin: 'com.android.application'\n    apply plugin: 'kotlin-android'\n    apply plugin: 'kotlin-android-extensions'\n    implementation 'com.android.support:multidex:1.0.3'\n    implementation \"org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1\"\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(revision db3af18b7ccbd2885c01bf020ba7f972da73b1eb)
++++ app/build.gradle	(date 1611796580000)
+@@ -45,6 +45,7 @@
+     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+     implementation 'com.google.firebase:firebase-auth:20.0.2'
+     implementation 'com.google.firebase:firebase-database:19.6.0'
++    implementation 'androidx.viewpager:viewpager:1.0.0'
+     testImplementation 'junit:junit:4.13.1'
+     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(revision db3af18b7ccbd2885c01bf020ba7f972da73b1eb)
++++ .idea/modules.xml	(revision db3af18b7ccbd2885c01bf020ba7f972da73b1eb)
+@@ -1,9 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/App_Hospital.iml" filepath="$PROJECT_DIR$/.idea/modules/App_Hospital.iml" />
+-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/App_Hospital.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/App_Hospital.app.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: app/src/main/java/com/example/apphospital/classes/controlDiario.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/apphospital/classes/controlDiario.kt	(date 1611796989000)
++++ app/src/main/java/com/example/apphospital/classes/controlDiario.kt	(date 1611796989000)
+@@ -0,0 +1,11 @@
++package com.example.apphospital.classes
++
++import androidx.appcompat.app.AppCompatActivity
++import android.os.Bundle
++
++class controlDiario : AppCompatActivity() {
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++        setContentView(R.layout.activity_control_diario)
++    }
++}
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    package=\"com.example.apphospital\">\n\n    <application\n        android:allowBackup=\"true\"\n        android:icon=\"@mipmap/ic_launcher\"\n        android:label=\"@string/app_name\"\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\n        android:supportsRtl=\"true\"\n        android:theme=\"@style/AppTheme\">\n        <activity\n            android:name=\".RegisterDetailsForm\"\n            android:screenOrientation=\"portrait\"/>\n        <activity\n            android:name=\".Home\"\n            android:screenOrientation=\"portrait\"/>\n        <activity android:name=\".MainActivity\"\n            android:screenOrientation=\"portrait\"/>\n        <activity android:name=\".datosDelUsuario\"\n            android:screenOrientation=\"portrait\"/>\n        <activity\n            android:name=\".Splashscreen\"\n            android:theme=\"@style/Theme.AppCompat.Light.NoActionBar\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.MAIN\" />\n                <category android:name=\"android.intent.category.LAUNCHER\" />\n            </intent-filter>\n        </activity>\n\n\n    </application>\n\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(revision db3af18b7ccbd2885c01bf020ba7f972da73b1eb)
++++ app/src/main/AndroidManifest.xml	(date 1611796989000)
+@@ -9,26 +9,28 @@
+         android:roundIcon="@mipmap/ic_launcher_round"
+         android:supportsRtl="true"
+         android:theme="@style/AppTheme">
++        <activity android:name=".classes.controlDiario"></activity>
+         <activity
+             android:name=".RegisterDetailsForm"
+-            android:screenOrientation="portrait"/>
++            android:screenOrientation="portrait" />
+         <activity
+             android:name=".Home"
+-            android:screenOrientation="portrait"/>
+-        <activity android:name=".MainActivity"
+-            android:screenOrientation="portrait"/>
+-        <activity android:name=".datosDelUsuario"
+-            android:screenOrientation="portrait"/>
++            android:screenOrientation="portrait" />
++        <activity
++            android:name=".MainActivity"
++            android:screenOrientation="portrait" />
++        <activity
++            android:name=".datosDelUsuario"
++            android:screenOrientation="portrait" />
+         <activity
+             android:name=".Splashscreen"
+             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
++
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+         </activity>
+-
+-
+     </application>
+ 
+ </manifest>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_control_diario.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_control_diario.xml	(date 1611797084000)
++++ app/src/main/res/layout/activity_control_diario.xml	(date 1611797084000)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".classes.controlDiario">
++
++    <androidx.viewpager2.widget.ViewPager2
++        android:id="@+id/viewPager1"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n        <option name=\"testRunner\" value=\"PLATFORM\" />\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"gradleJvm\" value=\"1.8\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n            <option value=\"$PROJECT_DIR$/app\" />\n          </set>\n        </option>\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\n        <option name=\"useQualifiedModuleNames\" value=\"true\" />\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision db3af18b7ccbd2885c01bf020ba7f972da73b1eb)
++++ .idea/gradle.xml	(date 1611796462000)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_8\" default=\"false\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\" />\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision db3af18b7ccbd2885c01bf020ba7f972da73b1eb)
++++ .idea/misc.xml	(date 1611796462000)
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+ </project>
+\ No newline at end of file
+Index: app/src/main/res/layout/slide1_viewPager.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/slide1_viewPager.xml	(date 1611799046000)
++++ app/src/main/res/layout/slide1_viewPager.xml	(date 1611799046000)
+@@ -0,0 +1,30 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    xmlns:app="http://schemas.android.com/apk/res-auto">
++
++    <RelativeLayout
++        app:layout_constraintTop_toTopOf="parent"
++        android:layout_width="match_parent"
++        android:layout_height="300dp"
++        android:orientation="horizontal"
++        android:background="@drawable/fondo_naranja">
++
++
++        <TextView
++            android:layout_width="match_parent"
++            android:layout_height="match_parent"
++            android:drawableStart="@drawable/ic_drugs"
++            android:gravity="center_horizontal"
++            />
++
++        <TextView
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"/>
++
++    </RelativeLayout>
++
++
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
