@@ -139,6 +139,7 @@
                 android:textStyle="bold" />
 
             <Button
+                android:id="@+id/completar_registroDiario_btn"
                 android:layout_width="130dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="10dp"

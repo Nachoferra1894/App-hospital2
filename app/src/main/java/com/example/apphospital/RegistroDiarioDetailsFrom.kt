@@ -8,15 +8,15 @@ import android.widget.TextView
 import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_register_details_form.*
 
-class RegisterDetailsForm : AppCompatActivity() {
+class RegistroDiarioDetailsFrom : AppCompatActivity() {
 
-    private lateinit var sliderAdapter:SliderAdapter
+    private lateinit var sliderAdapter:SliderAdapterDiario
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_details_form)
 
-        sliderAdapter= SliderAdapter(this)
+        sliderAdapter= SliderAdapterDiario(this)
 
         regform_slideview.adapter = sliderAdapter
 
@@ -41,7 +41,7 @@ class RegisterDetailsForm : AppCompatActivity() {
     @SuppressLint("ResourceAsColor")
     private fun addDots(position: Int) {
 
-        val mDots = Array(5) { TextView(this) }
+        val mDots = Array(6) { TextView(this) }
         regform_ll_mdot.removeAllViews()
 
         for (text in mDots){
@@ -50,6 +50,13 @@ class RegisterDetailsForm : AppCompatActivity() {
             text.setTextColor(resources.getColor(R.color.azul_registro))
 
             regform_ll_mdot.addView(text)
+        }
+
+        if(position == 0 || position == mDots.size-1){
+            regform_ll_mdot.setBackgroundColor(resources.getColor(R.color.purple1))
+        }
+        else{
+            regform_ll_mdot.setBackgroundColor(resources.getColor(R.color.white))
         }
 
         if(mDots.isNotEmpty()){

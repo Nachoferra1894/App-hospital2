@@ -4,6 +4,17 @@
     <string-array name="sexos">
         <item>Hombre</item>
         <item>Mujer</item>
-        <item>Otro</item>
     </string-array>
+
+    <string-array name="medicos">
+        <item>Dr. Paletta Claudio</item>
+        <item>Dr. Daverede Luis</item>
+        <item>Dr. Rizzo Manglio</item>
+        <item>Dr. Gayet Fernando</item>
+    </string-array>
+
+    <string-array name="lugares">
+        <item>Hospital Austral</item>
+    </string-array>
+
 </resources>

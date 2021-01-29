@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_1_27_21_11_07_PM_[Default_Changelist]" date="1611799622539" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_27_21_11_07_PM_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 1/27/21 11:07 PM [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/src/main/res/drawable/fondo_naranja.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_27_21_11_07_PM_[Default_Changelist]/fondo_naranja.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/6.5/fileHashes/fileHashes.lock" />
+    <option name="AFTER_PATH" value=".gradle/6.5/fileHashes/fileHashes.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_27_21_11_07_PM_[Default_Changelist]/fileHashes.lock" />
+  </binary>
+</changelist>
