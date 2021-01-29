@@ -40,6 +40,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/id_avatar"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
@@ -64,7 +65,7 @@
             android:textSize="25dp" />
 
         <TextView
-            android:id="@+id/homeFirstName_txtVw"
+            android:id="@+id/id_home_fullname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"

@@ -17,6 +17,8 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".SwitchAvatar"
+            android:screenOrientation="portrait"/>
         <activity android:name=".datosDelUsuario"
             android:screenOrientation="portrait"/>
         <activity
