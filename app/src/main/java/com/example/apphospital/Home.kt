@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.example.apphospital.classes.UserClass
+import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import java.io.BufferedReader
@@ -40,6 +41,11 @@ class Home : AppCompatActivity() {
         iv_avatar.setOnClickListener{
             startActivity(Intent(this,SwitchAvatar::class.java))
         }
+
+        completar_registroDiario_btn.setOnClickListener{
+            startActivity(Intent(this,ScreenSlidePagerActivity::class.java))
+        }
+
 
     }
 
