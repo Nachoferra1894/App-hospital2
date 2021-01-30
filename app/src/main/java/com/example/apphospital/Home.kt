@@ -15,10 +15,35 @@ import java.io.FileInputStream
 import java.io.InputStreamReader
 
 class Home : AppCompatActivity() {
+    var iv_avatar:ImageView?=null
+    var index:Int?=0
+    var user:UserClass?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+        loadUser()
 
+        iv_avatar = findViewById<ImageView>(R.id.id_avatar)
+
+        Toast.makeText(applicationContext, user!!.image,Toast.LENGTH_SHORT).show();
+        changeAvatar(Integer.parseInt(user!!.image))
+
+        val tv_fullname:TextView = findViewById(R.id.id_home_fullname)
+        if (user!!.fullname.length > 0) tv_fullname.setText(user!!.fullname).toString()
+
+
+        iv_avatar!!.setOnClickListener{
+            startActivity(Intent(this,SwitchAvatar::class.java))
+        }
+
+        completar_registroDiario_btn.setOnClickListener{
+            startActivity(Intent(this,ScreenSlidePagerActivity::class.java))
+        }
+
+
+    }
+
+    private fun loadUser() {
         var fileInputStream: FileInputStream? = null
         fileInputStream = openFileInput("user_info")
         var inputStreamReader: InputStreamReader = InputStreamReader(fileInputStream)
@@ -29,25 +54,39 @@ class Home : AppCompatActivity() {
             stringBuilder.append(text)
         }
 
-        val user:UserClass = Json.decodeFromString(stringBuilder.toString())
-
-        Toast.makeText(this,user.fullname,Toast.LENGTH_LONG).show();
-
-        val tv_fullname:TextView = findViewById(R.id.id_home_fullname)
-        if (user.fullname.length > 0) tv_fullname.setText(user.fullname).toString() 
-
-        val iv_avatar: ImageView = findViewById<ImageView>(R.id.id_avatar)
-
-        iv_avatar.setOnClickListener{
-            startActivity(Intent(this,SwitchAvatar::class.java))
-        }
-
-        completar_registroDiario_btn.setOnClickListener{
-            startActivity(Intent(this,ScreenSlidePagerActivity::class.java))
-        }
-
+        user = Json.decodeFromString(stringBuilder.toString())
+        index = Integer.parseInt(user!!.image)
 
     }
+
+    private fun changeAvatar(userImage: Int) {
+        when(userImage){
+            1 -> iv_avatar?.setImageResource(R.drawable.avatar1)
+            2 -> iv_avatar?.setImageResource(R.drawable.avatar2)
+            3 -> iv_avatar?.setImageResource(R.drawable.avatar3)
+            4 -> iv_avatar?.setImageResource(R.drawable.avatar4)
+            5 -> iv_avatar?.setImageResource(R.drawable.avatar5)
+            6 -> iv_avatar?.setImageResource(R.drawable.avatar6)
+            7 -> iv_avatar?.setImageResource(R.drawable.avatar7)
+            8 -> iv_avatar?.setImageResource(R.drawable.avatar8)
+            9 -> iv_avatar?.setImageResource(R.drawable.avatar9)
+            10 -> iv_avatar?.setImageResource(R.drawable.avatar10)
+            11 -> iv_avatar?.setImageResource(R.drawable.avatar11)
+            12 -> iv_avatar?.setImageResource(R.drawable.avatar12)
+            13 -> iv_avatar?.setImageResource(R.drawable.avatar13)
+            14 -> iv_avatar?.setImageResource(R.drawable.avatar14)
+            15 -> iv_avatar?.setImageResource(R.drawable.avatar15)
+            else -> iv_avatar?.setImageResource(R.drawable.avatar1)
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        loadUser()
+        changeAvatar(index!!)
+        Toast.makeText(applicationContext,"Start " + Integer.toString(index!!),Toast.LENGTH_SHORT).show()
+    }
+
 
 }
 

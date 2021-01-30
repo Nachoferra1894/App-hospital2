@@ -21,10 +21,9 @@ class MainActivity : AppCompatActivity() {
 
         val user:UserClass = UserClass("Fabrizio","123",true,"11/04/01","Carmen","Austral",
         "Blanco","10", SmokeClass(false,"1","1"), DiabeticClass(false,"no"),
-        false,false,false,false,"april")
+        false,false,false,false,"april","1")
 
         val jsonList = Json.encodeToJsonElement(user)
-
         val file:String = "user_info"
         val data:String = jsonList.toString()
         val fileOutputStream: FileOutputStream
