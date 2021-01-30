@@ -14,4 +14,5 @@ class Item1Fragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View = inflater.inflate(R.layout.item1_registrodiario_estado_de_animo, container, false)
+
 }

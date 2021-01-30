@@ -60,7 +60,7 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/btn_No"
+                android:id="@+id/btn_NoViNadie"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:text="No, no vi a nadie"
@@ -69,7 +69,7 @@
                 android:background="@drawable/rounded_edittext"/>
             <Button
                 android:layout_marginTop="10dp"
-                android:id="@+id/btn_m30min"
+                android:id="@+id/btn_Limitado"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Si, limitado a pocas interacciones interpersonales"
@@ -78,7 +78,7 @@
                 android:background="@drawable/rounded_edittext"/>
             <Button
             android:layout_marginTop="10dp"
-            android:id="@+id/btn_30y60min"
+            android:id="@+id/btn_Amgios1h"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Si, Vi a amigos y conocidos mas de 1 hora"
@@ -88,7 +88,7 @@
 
             <Button
                 android:layout_marginTop="10dp"
-                android:id="@+id/btn_mas60min"
+                android:id="@+id/btn_Amigos2h"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Si, Vi a amigos y conocidos mas de 2 horas"

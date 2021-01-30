@@ -50,8 +50,7 @@
                 android:background="@drawable/btn_rounded_secondarycolor"
                 android:text="INGRESAR"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                tools:ignore="OnClick" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/login_txt_register"
