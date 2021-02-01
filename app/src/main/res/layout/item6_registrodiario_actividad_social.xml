@@ -42,8 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:src="@drawable/day_deco"
-            android:scaleType="fitXY"
-            app:tint="@color/orange" />
+            android:scaleType="fitXY" />
     </LinearLayout>
 
     <RelativeLayout
@@ -53,49 +52,51 @@
         android:layout_below="@+id/top1">
 
         <LinearLayout
-            android:layout_centerHorizontal="true"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/btn_NoViNadie"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext"
                 android:text="No, no vi a nadie"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:background="@drawable/rounded_edittext"/>
+                android:textStyle="bold" />
+
             <Button
-                android:layout_marginTop="10dp"
                 android:id="@+id/btn_Limitado"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
                 android:text="Si, limitado a pocas interacciones interpersonales"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:background="@drawable/rounded_edittext"/>
-            <Button
-            android:layout_marginTop="10dp"
-            android:id="@+id/btn_Amgios1h"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="Si, Vi a amigos y conocidos mas de 1 hora"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:background="@drawable/rounded_edittext"/>
+                android:textStyle="bold" />
 
             <Button
+                android:id="@+id/btn_Amgios1h"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:text="Si, Vi a amigos y conocidos mas de 1 hora"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_Amigos2h"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
                 android:text="Si, Vi a amigos y conocidos mas de 2 horas"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:background="@drawable/rounded_edittext"/>
-
+                android:textStyle="bold" />
 
 
         </LinearLayout>

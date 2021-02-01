@@ -43,7 +43,7 @@
             android:layout_height="80dp"
             android:src="@drawable/day_deco"
             android:scaleType="fitXY"
-            app:tint="@color/orange" />
+            />
     </LinearLayout>
 
     <LinearLayout

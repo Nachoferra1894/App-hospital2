@@ -42,8 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:src="@drawable/day_deco"
-            android:scaleType="fitXY"
-            app:tint="@color/orange" />
+            android:scaleType="fitXY" />
     </LinearLayout>
 
     <RelativeLayout
@@ -59,7 +58,7 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/btn_No"
+                android:id="@+id/btn_NoViNadie"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:text="No"
@@ -68,7 +67,7 @@
                 android:background="@drawable/rounded_edittext"/>
             <Button
                 android:layout_marginTop="10dp"
-                android:id="@+id/btn_m30min"
+                android:id="@+id/btn_Limitado"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:text="Menos de 30 min"
@@ -77,7 +76,7 @@
                 android:background="@drawable/rounded_edittext"/>
             <Button
             android:layout_marginTop="10dp"
-            android:id="@+id/btn_30y60min"
+            android:id="@+id/btn_Amgios1h"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:text="Entre 30 y 60 min"
@@ -87,7 +86,7 @@
 
             <Button
                 android:layout_marginTop="10dp"
-                android:id="@+id/btn_mas60min"
+                android:id="@+id/btn_Amigos2h"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:text="Mas de 60 min"

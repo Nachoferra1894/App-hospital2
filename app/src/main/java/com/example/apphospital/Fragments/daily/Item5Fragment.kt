@@ -21,10 +21,10 @@ class Item5Fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View?{
         val v = inflater.inflate(R.layout.item5_registrodiario_actividad_fisica, container, false)
-        val btn1 = v.findViewById<View>(R.id.btn_No)
-        val btn2 = v.findViewById<View>(R.id.btn_m30min)
-        val btn3 = v.findViewById<View>(R.id.btn_30y60min)
-        val btn4 = v.findViewById<View>(R.id.btn_mas60min)
+        val btn1 = v.findViewById<View>(R.id.btn_NoViNadie)
+        val btn2 = v.findViewById<View>(R.id.btn_Limitado)
+        val btn3 = v.findViewById<View>(R.id.btn_Amgios1h)
+        val btn4 = v.findViewById<View>(R.id.btn_Amigos2h)
 
         btn1.setOnClickListener {
             val fragment = Item6Fragment()

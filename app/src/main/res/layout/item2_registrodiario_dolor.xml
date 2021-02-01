@@ -38,12 +38,12 @@
             </LinearLayout>
 
         </RelativeLayout>
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:src="@drawable/day_deco"
             android:scaleType="fitXY"
-            app:tint="@color/orange" />
+            android:src="@drawable/day_deco" />
     </LinearLayout>
 
     <LinearLayout
