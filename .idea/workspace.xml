@@ -2,45 +2,76 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config>
-        <device id="pixel_xl" />
-        <device id="pixel_3" />
-        <device id="pixel_4" />
-        <device id="pixel_3a_xl" />
-        <device id="pixel_2_xl" />
-        <device id="Nexus 6" />
-        <device id="pixel_3a" />
-        <device id="Nexus 6P" />
-        <device id="pixel_4_xl" />
-        <device id="pixel_2" />
-      </config>
+      <config />
     </shared>
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="85e92fd9-1b1b-44ec-910e-4d21ecdb58dc" name="Default Changelist" comment="">
+    <list default="true" id="c49831dc-608d-4d44-8b22-0bb7fd22520c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/register/DiabetedMed.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/register/DiabetesFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/register/Extras.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/register/SmokerDetailFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/register/SmokerFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/classes/DatPagerAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/App_Hospital.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/App_Hospital.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_25_2021_6_54_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_25_2021_6_54_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_27_2021_7_31_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_27_2021_7_31_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_27_21_11_07_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_27_21_11_07_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_29_2021_12_54_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_29_2021_12_54_AM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item1_registrodiario_estado_de_animo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item1_registrodiario_estado_de_animo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item2_registrodiario_dolor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item2_registrodiario_dolor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item3_registrodiario_apetito.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item3_registrodiario_apetito.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item4_registrodiario_hidratacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item4_registrodiario_hidratacion.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item5_registrodiario_actividad_fisica.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item5_registrodiario_actividad_fisica.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item6_registrodiario_actividad_social.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item6_registrodiario_actividad_social.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/FaltaPoco.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/FaltaPoco.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/Item1Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item1Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/Item2Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item2Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/Item3Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item3Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/Item4Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item4Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/Item5Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item5Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/Item6Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item6Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/RegisterDetailsForm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/RegisterDetailsForm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/ScreenSlidePagerActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/ScreenSlidePagerActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_details_form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_details_form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RF8M33X9NZV]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30_x86]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -49,55 +80,45 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="valueResourceFile" />
         <option value="Kotlin Class" />
-        <option value="layoutResourceFile" />
-        <option value="resourceFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1nZtHXjtQcuQGYbXFXtbCauwpSw" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1nm7StVkZnwS4x2FLmAolJYQsah" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_30_x86" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-01-30T05:31:27.413Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
-  </component>
-  <component name="PsdUISettings">
-    <option name="MODULE_TAB" value="Default Config" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateKotlinClassDialog.RecentsKey">
-      <recent name="com.example.apphospital.classes" />
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.apphospital.Fragments.daily" />
     </key>
-    <key name="android.template.1143026553">
-      <recent name="com.example.apphospital.classes" />
-    </key>
-    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.apphospital" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -106,70 +127,11 @@
       <recent name="C:\Users\fabri\Desktop\SpaceTechApps\App-hospital2\app\src\main\res\layout" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.app">
+  <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="App Hospital.App_Hospital.app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="App Hospital.App_Hospital.app" />
-      <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
-      <option name="DEPLOY_AS_INSTANT" value="false" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ALL_USERS" value="false" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
-      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="App_Hospital.app" />
@@ -224,9 +186,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -234,20 +194,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="85e92fd9-1b1b-44ec-910e-4d21ecdb58dc" name="Default Changelist" comment="" />
-      <created>1611609353322</created>
+      <changelist id="c49831dc-608d-4d44-8b22-0bb7fd22520c" name="Default Changelist" comment="" />
+      <created>1611983414534</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1611609353322</updated>
+      <updated>1611983414534</updated>
     </task>
-    <task id="LOCAL-00001" summary="terminado registroDiario con slides">
-      <created>1612037263246</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1612037263246</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,108 +207,106 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="unidos la parte de registro y completados pasajes de datos.&#10;TODO serializable" />
-    <MESSAGE value="terminado registroDiario con slides" />
-    <option name="LAST_COMMIT_MESSAGE" value="terminado registroDiario con slides" />
+    <option name="LAST_COMMIT_MESSAGE" value="unidos la parte de registro y completados pasajes de datos.&#10;TODO serializable" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="401" y="45" key="#App_Hospital.App_Hospital.app" timestamp="1611868631553">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="555" y="282" key="#PSD" timestamp="1611984033406">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="401" y="45" key="#App_Hospital.App_Hospital.app/0.0.1440.900@0.0.1440.900" timestamp="1611868631553" />
-    <state x="286" y="144" key="#PSD" timestamp="1611936955863">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="555" y="282" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1611984033406" />
+    <state x="413" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611983490264">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="286" y="144" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1611936955863" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1611956901350">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="413" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611983490264" />
+    <state x="743" y="404" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1611983579692">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1611956901350" />
-    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1611610074294">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="743" y="404" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1611983579692" />
+    <state x="689" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611983599391">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1611610074294" />
-    <state x="468" y="174" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611868664690">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="689" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611983599391" />
+    <state x="733" y="254" width="455" height="537" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1611984757500">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="468" y="174" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1611868664690" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1611724293221" />
-    <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog" timestamp="1611714001398">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="733" y="254" width="455" height="537" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611984757500" />
+    <state x="758" y="266" key="AndroidProcessChooserDialog" timestamp="1611984925791">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1611714001398" />
-    <state x="327" y="182" key="AndroidCreateResourceFileDialog" timestamp="1612035917553">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="758" y="266" key="AndroidProcessChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611984925791" />
+    <state x="739" y="265" key="FileChooserDialogImpl" timestamp="1611984105182">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="327" y="182" key="AndroidCreateResourceFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1612035917553" />
-    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1611724853797" />
-    <state x="258" y="25" width="923" height="806" key="CommitChangelistDialog2" timestamp="1612037262541">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="739" y="265" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611984105182" />
+    <state width="1480" height="265" key="GridCell.Tab.0.bottom" timestamp="1612218381934">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="258" y="25" width="923" height="806" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1612037262541" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1612034158635">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1480" height="265" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612218381934" />
+    <state width="1480" height="265" key="GridCell.Tab.0.center" timestamp="1612218381933">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612034158635" />
-    <state width="1476" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611971781471" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.806@0.25.1440.806" timestamp="1612032975939" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1612034158634">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1480" height="265" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612218381933" />
+    <state width="1480" height="265" key="GridCell.Tab.0.left" timestamp="1612218381933">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1612034158634" />
-    <state width="1476" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611971781470" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.806@0.25.1440.806" timestamp="1612032975937" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1612034158634">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1480" height="265" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612218381933" />
+    <state width="1480" height="265" key="GridCell.Tab.0.right" timestamp="1612218381934">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1612034158634" />
-    <state width="1476" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611971781470" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.806@0.25.1440.806" timestamp="1612032975934" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1612034158634">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1480" height="265" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612218381934" />
+    <state width="1480" height="265" key="GridCell.Tab.1.bottom" timestamp="1612218381934">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1612034158634" />
-    <state width="1476" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611971781470" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.806@0.25.1440.806" timestamp="1612032975938" />
-    <state x="308" y="197" key="IDE.errors.dialog" timestamp="1612032694763">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1480" height="265" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612218381934" />
+    <state width="1480" height="265" key="GridCell.Tab.1.center" timestamp="1612218381934">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="308" y="197" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1612032694763" />
-    <state x="147" y="65" key="MergeDialog" timestamp="1611786743047">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1480" height="265" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612218381934" />
+    <state width="1480" height="265" key="GridCell.Tab.1.left" timestamp="1612218381934">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1611786743047" />
-    <state x="277" y="55" key="SettingsEditor" timestamp="1611789491732">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1480" height="265" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612218381934" />
+    <state width="1480" height="265" key="GridCell.Tab.1.right" timestamp="1612218381934">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611789491732" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1612037264856">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1480" height="265" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612218381934" />
+    <state x="263" y="102" key="MergeDialog" timestamp="1612211016487">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1612037264856" />
-    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1611693372673">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="263" y="102" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612211016487" />
+    <state x="265" y="267" key="SettingsEditor" timestamp="1611983911395">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1611693372673" />
-    <state x="542" y="356" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612103584674">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="265" y="267" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611983911395" />
+    <state x="847" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612217199987">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="542" y="356" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1612103584674" />
-    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1611956778036" />
-    <state x="412" y="205" width="615" height="490" key="find.popup" timestamp="1612032892994">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="847" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612217199987" />
+    <state x="701" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1611984056725">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="412" y="205" width="615" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1612032892994" />
-    <state x="611" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1611957567874">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="611" y="184" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1611957567874" />
-    <state x="426" y="187" key="run.anything.popup" timestamp="1611962298202">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="426" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1611962298202" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1611866180209">
-      <screen x="0" y="25" width="1440" height="805" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.25.1440.805@0.25.1440.805" timestamp="1611866180209" />
+    <state x="701" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611984056725" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/apphospital/ScreenSlidePagerActivity.kt</url>
+          <line>26</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/apphospital/classes/DatPagerAdapter.kt</url>
+          <line>7</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="adapter" language="kotlin" />
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

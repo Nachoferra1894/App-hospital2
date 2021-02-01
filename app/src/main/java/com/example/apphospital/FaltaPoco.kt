@@ -13,11 +13,11 @@ class FaltaPoco :AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_faltapoco)
 
-        val user = intent.getSerializableExtra("user")
+        //val user = intent.getSerializableExtra("user")
 
         continue_txt_faltapoco.setOnClickListener {
             val intent = Intent(this,RegisterDetailsForm::class.java)
-            intent.putExtra("user",user)
+            //intent.putExtra("user",user)
             startActivity(intent)
         }
     }

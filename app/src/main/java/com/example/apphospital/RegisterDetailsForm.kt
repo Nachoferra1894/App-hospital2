@@ -5,39 +5,36 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Html
 import android.widget.TextView
-import androidx.viewpager.widget.ViewPager
+import androidx.fragment.app.FragmentActivity
+import androidx.viewpager2.widget.ViewPager2
+import com.example.apphospital.Fragments.register.*
+import com.example.apphospital.classes.DatPagerAdapter
 import kotlinx.android.synthetic.main.activity_register_details_form.*
+import kotlinx.android.synthetic.main.activity_viewpager_diario.*
 
-class RegisterDetailsForm : AppCompatActivity() {
 
-    private lateinit var sliderAdapter:SliderAdapter
+private const val NUM_PAGES = 5
+
+class RegisterDetailsForm() : FragmentActivity() {
+
+    private lateinit var viewPager: ViewPager2
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_details_form)
 
-        sliderAdapter= SliderAdapter(this)
+        val adaptador = DatPagerAdapter(this)
+        val fragsList = listOf(SmokerFragment(),SmokerDetailFragment(),DiabetesFragment(),DiabetedMed(),Extras())
 
-        regform_slideview.adapter = sliderAdapter
+        adaptador.fragsListHere.addAll(fragsList)
 
-        regform_slideview.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+        val pager = findViewById<ViewPager2>(R.id.regform_slideview_fragments)
 
-            override fun onPageScrollStateChanged(state: Int) {
-
-            }
-
-            override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
-
-            }
-            override fun onPageSelected(position: Int) {
-                addDots(position)
-            }
-
-        })
-
-        addDots(0)
+        pager.adapter = adaptador
+        pager.currentItem = 0
     }
 
+    /*
     @SuppressLint("ResourceAsColor")
     private fun addDots(position: Int) {
 
@@ -57,4 +54,6 @@ class RegisterDetailsForm : AppCompatActivity() {
         }
 
     }
+
+     */
 }

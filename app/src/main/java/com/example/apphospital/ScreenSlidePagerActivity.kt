@@ -1,13 +1,12 @@
 package com.example.apphospital
 
 import android.os.Bundle
-import android.os.Parcel
-import android.os.Parcelable
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
-import com.example.apphospital.Fragments.*
+import com.example.apphospital.Fragments.daily.*
+import com.example.apphospital.classes.DatPagerAdapter
 import kotlinx.android.synthetic.main.activity_viewpager_diario.*
 
 private const val NUM_PAGES = 6
@@ -32,12 +31,6 @@ class ScreenSlidePagerActivity() : FragmentActivity() {
         pager.adapter = adapter
         pager.setCurrentItem(0)
 
-    }
-
-    class DatPagerAdapter(fragactivity: FragmentActivity) : FragmentStateAdapter(fragactivity) {
-        val fragsListHere = mutableListOf<Fragment>()
-        override fun getItemCount():Int = fragsListHere.size
-        override fun createFragment(position: Int): Fragment = fragsListHere[position]
     }
 }
 
