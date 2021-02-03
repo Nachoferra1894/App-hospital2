@@ -65,7 +65,7 @@
                 android:background="@drawable/rounded_edittext"/>
             <Button
                 android:layout_marginTop="30dp"
-                android:id="@+id/btn_smoke2"
+                android:id="@+id/btn_smokeused"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:text="Fumaba"

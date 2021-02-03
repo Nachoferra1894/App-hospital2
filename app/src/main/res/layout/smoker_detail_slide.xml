@@ -66,13 +66,16 @@
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:layout_gravity="center"/>
+
                 <EditText
-                    android:layout_marginTop="15dp"
+                    android:id="@+id/smkdt_edtxt_cantdia"
+                    android:inputType="number"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
                     android:background="@drawable/rounded_edittext"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp"/>
+                    android:paddingRight="10dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -80,21 +83,25 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="¿Cantidad por dia?"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="¿Tiempo Fumando?"
                     android:textColor="@color/black"
-                    android:layout_gravity="center"/>
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
                 <EditText
-                    android:layout_marginTop="15dp"
+                    android:id="@+id/smkdt_edtxt_tiempofum"
+                    android:inputType="number"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
                     android:background="@drawable/rounded_edittext"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp"/>
+                    android:paddingRight="10dp" />
             </LinearLayout>
 
         </LinearLayout>
