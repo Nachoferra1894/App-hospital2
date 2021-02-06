@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val user:UserClass = UserClass("Fabrizio","123",true,"11/04/01","Carmen","Austral",
-        "Blanco","10", SmokeClass(false,"1","1"), DiabeticClass(false,"no"),
+        "Blanco","10", SmokeClass("0","1","1"), DiabeticClass(false,"no"),
         false,false,false,false,"april","1")
 
         val jsonList = Json.encodeToJsonElement(user)

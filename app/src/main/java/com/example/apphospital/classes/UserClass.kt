@@ -7,8 +7,8 @@ class UserClass {
 
     val fullname: String; val DNI: String; val gender: Boolean; val birthday: String;val medic: String;val place: String;val etnia: String;
     val id:String; val smoke:SmokeClass;val diabetic:DiabeticClass;
-    val Hip:Boolean;val Epoc:Boolean;val ACV:Boolean; val HeartAttack:Boolean;val registerday:String;
-    var image:String;
+    val Hip:Boolean;val Epoc:Boolean;val ACV:Boolean; val HeartAttack:Boolean;val registerday:String?;
+    var image:String?;
 
     constructor(
         fullname: String,
@@ -25,8 +25,8 @@ class UserClass {
         Epoc: Boolean,
         ACV: Boolean,
         HeartAttack: Boolean,
-        registerday: String,
-        image: String
+        registerday: String?,
+        image: String?
     ) {
         this.fullname = fullname
         this.DNI = DNI

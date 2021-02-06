@@ -197,7 +197,7 @@ class SwitchAvatar : AppCompatActivity(){
 
         user = Json.decodeFromString(stringBuilder.toString())
 
-        user_image = Integer.parseInt(user!!.image)
+        user_image = user?.image?.let { Integer.parseInt(it) }!!
 
     }
 }

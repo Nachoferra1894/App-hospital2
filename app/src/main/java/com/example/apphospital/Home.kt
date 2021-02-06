@@ -26,7 +26,7 @@ class Home : AppCompatActivity() {
         iv_avatar = findViewById<ImageView>(R.id.id_avatar)
 
         Toast.makeText(applicationContext, user!!.image,Toast.LENGTH_SHORT).show();
-        changeAvatar(Integer.parseInt(user!!.image))
+        user!!.image?.let { Integer.parseInt(it) }?.let { changeAvatar(it) }
 
         val tv_fullname:TextView = findViewById(R.id.id_home_fullname)
         if (user!!.fullname.length > 0) tv_fullname.setText(user!!.fullname).toString()
@@ -55,7 +55,7 @@ class Home : AppCompatActivity() {
         }
 
         user = Json.decodeFromString(stringBuilder.toString())
-        index = Integer.parseInt(user!!.image)
+        index = user!!.image?.let { Integer.parseInt(it) }
 
     }
 

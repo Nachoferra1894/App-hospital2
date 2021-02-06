@@ -4,9 +4,9 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 class SmokeClass {
-    val option:Boolean;val quantity:String;val time:String
+    val option:String;val quantity:String;val time:String
 
-    constructor(option: Boolean, quantity: String="none", time: String="none") {
+    constructor(option: String, quantity: String="none", time: String="none") {
         this.option = option
         this.quantity = quantity
         this.time = time

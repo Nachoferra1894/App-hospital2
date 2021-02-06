@@ -15,7 +15,7 @@ class datosMedicos : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_datos_medicos)
 
-        val nombre = intent.getStringExtra("nombre")
+        val nombre = intent.getStringExtra("name")
         val email = intent.getStringExtra("email")
         val genero = intent.getBooleanExtra("genero",true)
         val  dia =intent.getIntExtra("dia",0).toString()
@@ -47,9 +47,17 @@ class datosMedicos : AppCompatActivity() {
                 val etnia = etnia_edtxt_datmed.text.toString()
                 val id = id_edtxt_datmed.text.toString()
 
-                //val user : Serializable = UserClass(nombre,dni,genero,dia+mes+year,selectedMedic,selectedPlace,etnia,id,null,null,false,false,false,false,null)
+                intent.putExtra("nombre", nombre)
+                intent.putExtra("email", email)
+                intent.putExtra("genero", genero)
+                intent.putExtra("date", dia+mes+year)
+                intent.putExtra("dni",dni)
+                intent.putExtra("medic",selectedMedic)
+                intent.putExtra("place",selectedPlace)
+                intent.putExtra("etnia",etnia)
+                intent.putExtra("id",id)
 
-                //intent.putExtra("user",user)
+
                 startActivity(intent)
             }
         }

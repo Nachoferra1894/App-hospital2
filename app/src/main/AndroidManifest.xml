@@ -28,6 +28,8 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".FaltaPoco"
             android:screenOrientation="portrait"/>
+        <activity android:name=".Terminamos"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Splashscreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

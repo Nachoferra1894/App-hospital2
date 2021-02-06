@@ -68,44 +68,28 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
+                    android:id="@+id/rad_hipertension"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="40dp"
-                        android:layout_height="50dp"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="SI"/>
-                        <RadioButton
-                            android:id="@+id/radioButton9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                             />
-                    </LinearLayout>
 
 
-                    <LinearLayout
-                        android:layout_width="40dp"
-                        android:layout_height="50dp"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="NO"/>
+                    <RadioButton
+                        android:id="@+id/rad_hipertension_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SI"/>
 
-                        <RadioButton
-                            android:id="@+id/radioButton8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
+
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/rad_hipertension_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO"/>
                 </RadioGroup>
 
             </LinearLayout>
@@ -113,7 +97,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -127,51 +111,34 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
+                    android:id="@+id/rad_epoc"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="40dp"
-                        android:layout_height="50dp"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="SI"/>
-                        <RadioButton
-                            android:id="@+id/radioButton3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            />
-                    </LinearLayout>
 
+                <RadioButton
+                    android:id="@+id/rad_epoc_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SI"/>
 
-                    <LinearLayout
-                        android:layout_width="40dp"
-                        android:layout_height="50dp"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="NO"/>
-                        <RadioButton
-                            android:id="@+id/radioButton4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            />
-                    </LinearLayout>
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/rad_epoc_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"/>
+
                 </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -184,44 +151,25 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
+                    android:id="@+id/rad_acv"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="40dp"
-                        android:layout_height="50dp"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="SI"/>
-                        <RadioButton
-                            android:id="@+id/radioButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            />
-                    </LinearLayout>
+                    <RadioButton
+                        android:id="@+id/rad_acv_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SI"/>
 
-
-                    <LinearLayout
-                        android:layout_width="40dp"
-                        android:layout_height="50dp"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="NO"/>
-                        <RadioButton
-                            android:id="@+id/radioButton2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            />
-                    </LinearLayout>
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/rad_acv_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO"/>
                 </RadioGroup>
 
             </LinearLayout>
@@ -229,7 +177,7 @@
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -243,46 +191,35 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
+                    android:id="@+id/rad_inf"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="40dp"
-                        android:layout_height="50dp"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="SI"/>
-                        <RadioButton
-                            android:id="@+id/radioButton5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            />
-                    </LinearLayout>
+                    <RadioButton
+                        android:id="@+id/rad_inf_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SI"/>
 
 
-                    <LinearLayout
-                        android:layout_width="40dp"
-                        android:layout_height="50dp"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="NO"/>
-                        <RadioButton
-                            android:id="@+id/radioButton6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            />
-                    </LinearLayout>
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/rad_inf_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO"/>
                 </RadioGroup>
             </LinearLayout>
+
+            <Button
+                android:id="@+id/extra_btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONFIRMAR"
+                android:layout_marginTop="20dp" />
 
         </LinearLayout>
 

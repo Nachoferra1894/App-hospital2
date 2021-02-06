@@ -62,14 +62,14 @@ class datosDelUsuario : AppCompatActivity() {
             } else {
                 val intent = Intent(this,datosMedicos::class.java)
 
-                intent.putExtra("nombre", nombreYApellido_edtxt_id.text)
-                intent.putExtra("email", email_edtxt_id.text)
-                var isMale = sexos_spnr.selectedItemPosition == 0
+                intent.putExtra("name", nombreYApellido_edtxt_id.text.toString())
+                intent.putExtra("email", email_edtxt_id.text.toString())
+                val isMale = sexos_spnr.selectedItemPosition == 0
                 intent.putExtra("genero", isMale)
                 intent.putExtra("dia", daySelected)
                 intent.putExtra("mes", monthSelected)
                 intent.putExtra("año", yearSelected)
-                intent.putExtra("dni",dni_edtxt_id.text)
+                intent.putExtra("dni",dni_edtxt_id.text.toString())
 
                 startActivity(intent)
             }

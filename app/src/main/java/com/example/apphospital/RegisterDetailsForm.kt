@@ -1,15 +1,20 @@
 package com.example.apphospital
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.text.Html
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.example.apphospital.Fragments.register.*
 import com.example.apphospital.Fragments.registerUtilities.Retriever
 import com.example.apphospital.classes.DatPagerAdapter
+import com.example.apphospital.classes.DiabeticClass
+import com.example.apphospital.classes.SmokeClass
+import com.example.apphospital.classes.UserClass
 import kotlinx.android.synthetic.main.activity_register_details_form.*
 
 
@@ -25,14 +30,37 @@ class RegisterDetailsForm() : FragmentActivity(),Retriever {
     var time = 0
     var diabetic = false
     var med :String? = null
+    var hip=false
+    var epoc=false
+    var acv = false
+    var inf = false
+    lateinit var nombre:String
+    lateinit var email:String
+    var genero = false
+    lateinit var  date:String
+    lateinit var dni:String
+    lateinit var medic:String
+    lateinit var place:String
+    lateinit var etnia:String
+    lateinit var id:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_details_form)
+        nombre = intent.getStringExtra("nombre")
+        email = intent.getStringExtra("email")
+        genero = intent.getBooleanExtra("genero",true)
+        date =intent.getStringExtra("date")
+        dni = intent.getStringExtra("dni")
+        medic = intent.getStringExtra("medic")
+        place = intent.getStringExtra("place")
+        etnia = intent.getStringExtra("etnia")
+        id = intent.getStringExtra("id")
+
         viewPager = findViewById<ViewPager2>(R.id.regform_slideview_fragments)
 
         val adapter = DatPagerAdapter(this)
-        var fragsList = listOf(SmokerFragment(this),SmokerDetailFragment(this),DiabetesFragment(this),DiabetedMed(this),Extras())
+        var fragsList = listOf(SmokerFragment(this),SmokerDetailFragment(this),DiabetesFragment(this),DiabetedMed(this),Extras(this))
         initializeFrags(viewPager,adapter,fragsList,0)
 
         addDots(0,fragsList.size)
@@ -69,7 +97,15 @@ class RegisterDetailsForm() : FragmentActivity(),Retriever {
         if(mDots.isNotEmpty()){
             mDots[position].setTextColor(resources.getColor(R.color.orange))
         }
+    }
 
+    private fun endActivity(){
+        val smokerC = SmokeClass(smokes.toString(),cant.toString(),time.toString())
+        val diabeticC = DiabeticClass(diabetic,med)
+
+        val user = UserClass(nombre,dni,genero,date,medic,place,etnia,id,smokerC,diabeticC,hip,epoc,acv,inf,null,null)
+        //TODO load user into base
+        startActivity(Intent(this,Home::class.java))
     }
 
     override fun retrieve(message: Bundle, position: Int) {
@@ -111,9 +147,21 @@ class RegisterDetailsForm() : FragmentActivity(),Retriever {
                 viewPager.currentItem = position + 1
             }
             4 ->{
+                hip = message.getBoolean("hip")
+                epoc = message.getBoolean("epoc")
+                acv = message.getBoolean("acv")
+                inf = message.getBoolean("inf")
 
+                if((smokes != 0 && cant ==0) || (smokes != 0 && time ==0) || (diabetic && med ==null)){
+                    val text = "Completa todos los datos antes de seguir"
+                    val duration = Toast.LENGTH_SHORT
+                    val toast = Toast.makeText(applicationContext, text, duration)
+                    toast.show()
+                }
+                else{
+                    endActivity()
+                }
             }
-
         }
     }
 
