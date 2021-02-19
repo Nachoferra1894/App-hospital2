@@ -23,7 +23,7 @@ class ReadWriteUserData {
                 fileOutputStream = context.openFileOutput(file, Context.MODE_PRIVATE)
                 fileOutputStream.write(data.toByteArray())
             }catch (e: Exception){
-                e.printStackTrace()
+                println("explosion")
             }
         }
 
@@ -36,6 +36,9 @@ class ReadWriteUserData {
             var text: String? = null
             while ({ text = bufferedReader.readLine(); text }() != null) {
                 stringBuilder.append(text)
+            }
+            if(text == null){
+                throw noUserLocalMemoryExeption()
             }
 
             return Json.decodeFromString(stringBuilder.toString())

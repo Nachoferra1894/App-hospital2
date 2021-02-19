@@ -116,10 +116,11 @@ class RegisterDetailsForm() : FragmentActivity(),Retriever {
 
         val db = FirebaseFirestore.getInstance()
 
+
         val userPlace = db.collection("users").document(id)
         userPlace.get()
                 .addOnSuccessListener { document ->
-            if (document != null) {
+            if (!document.exists()) {
                 userPlace.set(user)
                 ReadWriteUserData.write(user, this)
                 val text = "Usuario registrado exitosamente"
