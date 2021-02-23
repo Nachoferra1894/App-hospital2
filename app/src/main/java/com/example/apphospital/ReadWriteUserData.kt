@@ -16,7 +16,7 @@ class ReadWriteUserData {
 
         fun write(user:UserClass , context: Context){
             val jsonList = Json.encodeToJsonElement(user)
-            val file:String = "user_info"
+            val file = "user_info"
             val data:String = jsonList.toString()
             val fileOutputStream: FileOutputStream
             try {
@@ -29,21 +29,17 @@ class ReadWriteUserData {
         }
 
         fun read(context: Context): UserClass {
-            var fileInputStream: FileInputStream? = null
-            fileInputStream = context.openFileInput("user_info")
-            var inputStreamReader: InputStreamReader = InputStreamReader(fileInputStream)
-            val bufferedReader: BufferedReader = BufferedReader(inputStreamReader)
+            var fileInputStream = context.openFileInput("user_info")
+            var inputStreamReader = InputStreamReader(fileInputStream)
+            val bufferedReader = BufferedReader(inputStreamReader)
             val stringBuilder: StringBuilder = StringBuilder()
             var text: String? = null
             while ({ text = bufferedReader.readLine(); text }() != null) {
                 stringBuilder.append(text)
             }
-            if(text == null){
-                throw noUserLocalMemoryExeption()
-            }
 
-            return Json.decodeFromString(stringBuilder.toString())
             fileInputStream.close()
+            return Json.decodeFromString(stringBuilder.toString())
         }
 
     }

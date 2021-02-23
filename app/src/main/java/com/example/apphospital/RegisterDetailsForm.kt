@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Html
 import android.util.Log
+import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -17,6 +18,7 @@ import com.example.apphospital.classes.DiabeticClass
 import com.example.apphospital.classes.SmokeClass
 import com.example.apphospital.classes.UserClass
 import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_register_details_form.*
 
 
@@ -101,6 +103,10 @@ class RegisterDetailsForm() : FragmentActivity(),Retriever {
     }
 
     private fun endActivity(){
+
+        loadingPanelRegister.visibility = View.VISIBLE
+        loadingPanelRegister.bringToFront()
+
         val smokerC = SmokeClass(smokes.toString(), cant.toString(), time.toString())
         val diabeticC = DiabeticClass(diabetic, med)
 
@@ -123,12 +129,14 @@ class RegisterDetailsForm() : FragmentActivity(),Retriever {
             if (!document.exists()) {
                 userPlace.set(user)
                 ReadWriteUserData.write(user, this)
+                loadingPanelRegister.visibility = View.INVISIBLE
                 val text = "Usuario registrado exitosamente"
                 val duration = Toast.LENGTH_SHORT
                 val toast = Toast.makeText(applicationContext, text, duration)
                 toast.show()
                 startActivity(Intent(this, Home::class.java))
             } else {
+                loadingPanelRegister.visibility = View.INVISIBLE
                 val text = "Usuario ya existe"
                 val duration = Toast.LENGTH_SHORT
                 val toast = Toast.makeText(applicationContext, text, duration)
@@ -137,6 +145,7 @@ class RegisterDetailsForm() : FragmentActivity(),Retriever {
             }
         }
                 .addOnFailureListener { exception ->
+                    loadingPanelRegister.visibility = View.INVISIBLE
                     val text = "A ocurrido un error"
                     val duration = Toast.LENGTH_SHORT
                     val toast = Toast.makeText(applicationContext, text, duration)

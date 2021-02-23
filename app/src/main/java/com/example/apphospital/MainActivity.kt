@@ -4,7 +4,9 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import com.example.apphospital.classes.DiabeticClass
@@ -43,11 +45,18 @@ class MainActivity : AppCompatActivity() {
                 toast.show()
             }
             else{
+
+                loadingPanelLogin.visibility = View.VISIBLE
+                loadingPanelLogin.bringToFront()
+
+
                 val db = FirebaseFirestore.getInstance()
 
                 val id = login_edtxt_id.text.toString()
+
                 val userPlace = db.collection("users").document(id)
                 userPlace.get()
+
                         .addOnSuccessListener {document ->
                             if(document.exists()){
 
@@ -64,11 +73,14 @@ class MainActivity : AppCompatActivity() {
                                 document.getString("image"))
 
                                 ReadWriteUserData.write(userLoaded,applicationContext)
+                                loadingPanelLogin.visibility = View.INVISIBLE
                                 startActivity(Intent(this, Home::class.java))
                                 //TODO chequear cotra y bajar usuario
 
                             }
                             else{
+                                loadingPanelLogin.visibility = View.INVISIBLE
+
                                 val text = "Usuario no existe"
                                 val duration = Toast.LENGTH_SHORT
                                 val toast = Toast.makeText(applicationContext, text, duration)
