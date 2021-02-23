@@ -5,26 +5,26 @@ import kotlinx.serialization.Serializable
 @Serializable
 class UserClass {
 
-    val fullname: String; val DNI: String; val gender: Boolean; val birthday: String;val medic: String;val place: String;val etnia: String;
-    val id:String; val smoke:SmokeClass;val diabetic:DiabeticClass;
-    val Hip:Boolean;val Epoc:Boolean;val ACV:Boolean; val HeartAttack:Boolean;val registerday:String?;
+    val fullname: String?; val DNI: String?; val gender: Boolean?; val birthday: String?;val medic: String?;val place: String?;val etnia: String?;
+    val id:String?; val smoke:SmokeClass?;val diabetic:DiabeticClass?;
+    val Hip:Boolean?;val Epoc:Boolean?;val ACV:Boolean?; val HeartAttack:Boolean?;val registerday:String?;
     var image:String?;
 
     constructor(
-        fullname: String,
-        DNI: String,
-        gender: Boolean,
-        birthday: String,
-        medic: String,
-        place: String,
-        etnia: String,
-        id: String,
-        smoke: SmokeClass,
-        diabetic: DiabeticClass,
-        Hip: Boolean,
-        Epoc: Boolean,
-        ACV: Boolean,
-        HeartAttack: Boolean,
+        fullname: String?,
+        DNI: String?,
+        gender: Boolean?,
+        birthday: String?,
+        medic: String?,
+        place: String?,
+        etnia: String?,
+        id: String?,
+        smoke: SmokeClass?,
+        diabetic: DiabeticClass?,
+        Hip: Boolean?,
+        Epoc: Boolean?,
+        ACV: Boolean?,
+        HeartAttack: Boolean?,
         registerday: String?,
         image: String?
     ) {

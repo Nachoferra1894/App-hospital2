@@ -49,6 +49,21 @@ class MainActivity : AppCompatActivity() {
                 userPlace.get()
                         .addOnSuccessListener {document ->
                             if(document.exists()){
+
+                                val userLoaded = UserClass(document.getString("fullname"),
+                                document.getString("dni"),document.getBoolean("gender"),
+                                document.getString("birthday"),document.getString("medic"),
+                                document.getString("place"),
+                                document.getString("etnia"),
+                                document.getString("id"),
+                                document.get<SmokeClass>("smoke",SmokeClass::class.java),
+                                document.get<DiabeticClass>("diabetic",DiabeticClass::class.java),document.getBoolean("hip"),
+                                document.getBoolean("epoc"),document.getBoolean("acv"),
+                                document.getBoolean("heartAttack"),document.getString("registerDay"),
+                                document.getString("image"))
+
+                                ReadWriteUserData.write(userLoaded,this)
+                                startActivity(Intent(this, Home::class.java))
                                 //TODO chequear cotra y bajar usuario
 
                             }

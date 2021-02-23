@@ -17,11 +17,12 @@ import java.io.InputStreamReader
 class Home : AppCompatActivity() {
     var iv_avatar:ImageView?=null
     var index:Int?=0
-    var user:UserClass?=null
+    lateinit var user:UserClass
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-        loadUser()
+        user = ReadWriteUserData.read(this)
+        index = user.image?.let { Integer.parseInt(it) }
 
         iv_avatar = findViewById<ImageView>(R.id.id_avatar)
 
@@ -29,7 +30,7 @@ class Home : AppCompatActivity() {
         user!!.image?.let { Integer.parseInt(it) }?.let { changeAvatar(it) }
 
         val tv_fullname:TextView = findViewById(R.id.id_home_fullname)
-        if (user!!.fullname.length > 0) tv_fullname.setText(user!!.fullname).toString()
+        if (user.fullname?.length!! > 0) tv_fullname.setText(user.fullname).toString()
 
 
         iv_avatar!!.setOnClickListener{
@@ -44,18 +45,6 @@ class Home : AppCompatActivity() {
     }
 
     private fun loadUser() {
-        var fileInputStream: FileInputStream? = null
-        fileInputStream = openFileInput("user_info")
-        var inputStreamReader: InputStreamReader = InputStreamReader(fileInputStream)
-        val bufferedReader: BufferedReader = BufferedReader(inputStreamReader)
-        val stringBuilder: StringBuilder = StringBuilder()
-        var text: String? = null
-        while ({ text = bufferedReader.readLine(); text }() != null) {
-            stringBuilder.append(text)
-        }
-
-        user = Json.decodeFromString(stringBuilder.toString())
-        index = user!!.image?.let { Integer.parseInt(it) }
 
     }
 
