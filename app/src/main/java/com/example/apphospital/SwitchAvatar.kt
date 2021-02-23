@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.apphospital.classes.UserClass
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.encodeToJsonElement
@@ -19,7 +20,7 @@ class SwitchAvatar : AppCompatActivity(){
     var user_image:Int = 0;
     var user_avatar:ImageView? = null
     var avatar_array:MutableList<ImageView>? = null
-    var user: UserClass?=null
+    lateinit var user: UserClass
     var index:Int?=0
 
 
@@ -27,7 +28,8 @@ class SwitchAvatar : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_switch_avatar)
 
-        getData()
+        user = ReadWriteUserData.read(applicationContext)
+
         user_avatar = findViewById(R.id.id_user_avatar)
         changeAvatar(user_image)
 
@@ -129,18 +131,20 @@ class SwitchAvatar : AppCompatActivity(){
 
         val btn_switch:Button = findViewById(R.id.id_avatar_btn)
         btn_switch.setOnClickListener {
-            user!!.image= Integer.toString(index!!)
-            val jsonList = Json.encodeToJsonElement(user)
-            val file:String = "user_info"
-            val data:String = jsonList.toString()
-            val fileOutputStream: FileOutputStream
-            try {
-                fileOutputStream = openFileOutput(file, Context.MODE_PRIVATE)
-                fileOutputStream.write(data.toByteArray())
-            }catch (e: Exception){
-                e.printStackTrace()
-            }
-            Toast.makeText(applicationContext,"Cambio de avatar exitoso!",Toast.LENGTH_SHORT).show()
+            user.image = Integer.toString(index!!)
+
+            val db = FirebaseFirestore.getInstance()
+
+            val userPlace = db.collection("users").document(user.id.toString())
+            userPlace.get()
+                    .addOnSuccessListener {
+                        userPlace.set(user)
+                        ReadWriteUserData.write(user,applicationContext)
+                        Toast.makeText(applicationContext,"Cambio de avatar exitoso!",Toast.LENGTH_SHORT).show()
+                    }
+                    .addOnFailureListener {
+                        Toast.makeText(applicationContext,"Fallo en conexion a red",Toast.LENGTH_SHORT).show()
+                    }
         }
 
     }
@@ -182,22 +186,5 @@ class SwitchAvatar : AppCompatActivity(){
             15 -> user_avatar?.setImageResource(R.drawable.avatar15)
             else -> user_avatar?.setImageResource(R.drawable.avatar1)
         }
-    }
-
-    private fun getData() {
-        var fileInputStream: FileInputStream? = null
-        fileInputStream = openFileInput("user_info")
-        var inputStreamReader: InputStreamReader = InputStreamReader(fileInputStream)
-        val bufferedReader: BufferedReader = BufferedReader(inputStreamReader)
-        val stringBuilder: StringBuilder = StringBuilder()
-        var text: String? = null
-        while ({ text = bufferedReader.readLine(); text }() != null) {
-            stringBuilder.append(text)
-        }
-
-        user = Json.decodeFromString(stringBuilder.toString())
-
-        user_image = user?.image?.let { Integer.parseInt(it) }!!
-
     }
 }

@@ -21,8 +21,7 @@ class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-        user = ReadWriteUserData.read(applicationContext)
-        index = user.image?.let { Integer.parseInt(it) }
+        loadData()
 
         iv_avatar = findViewById<ImageView>(R.id.id_avatar)
 
@@ -41,10 +40,6 @@ class Home : AppCompatActivity() {
             startActivity(Intent(this,ScreenSlidePagerActivity::class.java))
         }
 
-
-    }
-
-    private fun loadUser() {
 
     }
 
@@ -69,13 +64,16 @@ class Home : AppCompatActivity() {
         }
     }
 
-    override fun onStart() {
-        super.onStart()
-        loadUser()
-        changeAvatar(index!!)
-        Toast.makeText(applicationContext,"Start " + Integer.toString(index!!),Toast.LENGTH_SHORT).show()
+    private fun loadData(){
+        user = ReadWriteUserData.read(applicationContext)
+        index = user.image?.let { Integer.parseInt(it) }
     }
 
+    override fun onResume() {
+        super.onResume()
+        loadData()
+        changeAvatar(index!!)
+    }
 
 }
 

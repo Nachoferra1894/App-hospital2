@@ -76,15 +76,12 @@ class MainActivity : AppCompatActivity() {
                                 ReadWriteUserData.write(userLoaded,applicationContext)
                                 loadingPanelLogin.visibility = View.INVISIBLE
                                 startActivity(Intent(this, Home::class.java))
-                                //TODO chequear cotra y bajar usuario
+                                //TODO chequear cotra
 
                             }
                             else{
                                 loadingPanelLogin.visibility = View.INVISIBLE
-
-                                val text = "Usuario no existe"
-                                val duration = Toast.LENGTH_SHORT
-                                val toast = Toast.makeText(applicationContext, text, duration)
+                                Toast.makeText(applicationContext,"Usuario no existe",Toast.LENGTH_SHORT).show()
                             }
                         }
             }
