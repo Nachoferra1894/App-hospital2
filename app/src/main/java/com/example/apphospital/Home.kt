@@ -16,7 +16,7 @@ import java.io.InputStreamReader
 
 class Home : AppCompatActivity() {
     var iv_avatar:ImageView?=null
-    var index:Int?=0
+    var index:Int=0
     lateinit var user:UserClass
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +26,7 @@ class Home : AppCompatActivity() {
         iv_avatar = findViewById<ImageView>(R.id.id_avatar)
 
         Toast.makeText(applicationContext, user!!.image,Toast.LENGTH_SHORT).show();
-        user!!.image?.let { Integer.parseInt(it) }?.let { changeAvatar(it) }
+        user.image?.let { Integer.parseInt(it) }?.let { UserImageChanger.changeAvatar(id_avatar,index) }
 
         val tv_fullname:TextView = findViewById(R.id.id_home_fullname)
         if (user.fullname?.length!! > 0) tv_fullname.setText(user.fullname).toString()
@@ -43,36 +43,15 @@ class Home : AppCompatActivity() {
 
     }
 
-    private fun changeAvatar(userImage: Int) {
-        when(userImage){
-            1 -> iv_avatar?.setImageResource(R.drawable.avatar1)
-            2 -> iv_avatar?.setImageResource(R.drawable.avatar2)
-            3 -> iv_avatar?.setImageResource(R.drawable.avatar3)
-            4 -> iv_avatar?.setImageResource(R.drawable.avatar4)
-            5 -> iv_avatar?.setImageResource(R.drawable.avatar5)
-            6 -> iv_avatar?.setImageResource(R.drawable.avatar6)
-            7 -> iv_avatar?.setImageResource(R.drawable.avatar7)
-            8 -> iv_avatar?.setImageResource(R.drawable.avatar8)
-            9 -> iv_avatar?.setImageResource(R.drawable.avatar9)
-            10 -> iv_avatar?.setImageResource(R.drawable.avatar10)
-            11 -> iv_avatar?.setImageResource(R.drawable.avatar11)
-            12 -> iv_avatar?.setImageResource(R.drawable.avatar12)
-            13 -> iv_avatar?.setImageResource(R.drawable.avatar13)
-            14 -> iv_avatar?.setImageResource(R.drawable.avatar14)
-            15 -> iv_avatar?.setImageResource(R.drawable.avatar15)
-            else -> iv_avatar?.setImageResource(R.drawable.avatar1)
-        }
-    }
-
     private fun loadData(){
         user = ReadWriteUserData.read(applicationContext)
-        index = user.image?.let { Integer.parseInt(it) }
+        index = user.image?.toInt() ?: 0
     }
 
     override fun onResume() {
         super.onResume()
         loadData()
-        changeAvatar(index!!)
+        UserImageChanger.changeAvatar(id_avatar,index)
     }
 
 }

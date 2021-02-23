@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         try {
             val user = ReadWriteUserData.read(this)
-            startActivity(Intent(this, Home::class.java))
+            startActivity(Intent(this, Welcome::class.java))
         } catch (e: FileNotFoundException){
         }
 

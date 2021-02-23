@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
@@ -24,6 +26,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="80dp">
         <TextView
+            android:id="@+id/welcome_title_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Firstname"
@@ -47,17 +50,10 @@
         android:orientation="vertical"
         android:gravity="center">
         <ImageView
+            android:id="@+id/welcome_avatar"
             android:layout_width="250dp"
             android:layout_height="250dp"
             android:src="@drawable/avatar1"/>
-        <TextView
-            android:layout_marginTop="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="FIRST SECOND"
-            android:textColor="@color/purple4"
-            android:textSize="18dp"
-            android:textStyle="bold"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/id_cont_btn"
@@ -69,6 +65,7 @@
         android:orientation="vertical"
         android:gravity="center">
         <Button
+            android:id="@+id/wlecome_confirm"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:text="SI. SOY YO!"
@@ -76,6 +73,7 @@
 
             android:background="@drawable/btn_rounded_primarycolordark"/>
         <Button
+            android:id="@+id/welcome_negate"
             android:layout_marginTop="20dp"
             android:layout_width="280dp"
             android:layout_height="50dp"
