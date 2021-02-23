@@ -22,6 +22,7 @@ class ReadWriteUserData {
             try {
                 fileOutputStream = context.openFileOutput(file, Context.MODE_PRIVATE)
                 fileOutputStream.write(data.toByteArray())
+                fileOutputStream.close()
             }catch (e: Exception){
                 println("explosion")
             }
@@ -42,6 +43,7 @@ class ReadWriteUserData {
             }
 
             return Json.decodeFromString(stringBuilder.toString())
+            fileInputStream.close()
         }
 
     }

@@ -21,7 +21,7 @@ class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-        user = ReadWriteUserData.read(this)
+        user = ReadWriteUserData.read(applicationContext)
         index = user.image?.let { Integer.parseInt(it) }
 
         iv_avatar = findViewById<ImageView>(R.id.id_avatar)

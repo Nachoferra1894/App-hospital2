@@ -45,7 +45,8 @@ class MainActivity : AppCompatActivity() {
             else{
                 val db = FirebaseFirestore.getInstance()
 
-                val userPlace = db.collection("users").document(login_edtxt_id.text.toString())
+                val id = login_edtxt_id.text.toString()
+                val userPlace = db.collection("users").document(id)
                 userPlace.get()
                         .addOnSuccessListener {document ->
                             if(document.exists()){
@@ -62,7 +63,7 @@ class MainActivity : AppCompatActivity() {
                                 document.getBoolean("heartAttack"),document.getString("registerDay"),
                                 document.getString("image"))
 
-                                ReadWriteUserData.write(userLoaded,this)
+                                ReadWriteUserData.write(userLoaded,applicationContext)
                                 startActivity(Intent(this, Home::class.java))
                                 //TODO chequear cotra y bajar usuario
 
@@ -74,7 +75,6 @@ class MainActivity : AppCompatActivity() {
                             }
                         }
             }
-            startActivity(Intent(this,Home::class.java))
         }
     }
 
