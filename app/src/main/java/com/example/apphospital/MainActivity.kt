@@ -17,6 +17,7 @@ import com.google.firebase.firestore.auth.User
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.encodeToJsonElement
+import java.io.FileNotFoundException
 import java.io.FileOutputStream
 
 class MainActivity : AppCompatActivity() {
@@ -27,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         try {
             val user = ReadWriteUserData.read(this)
             startActivity(Intent(this, Home::class.java))
-        } catch (e: noUserLocalMemoryExeption){
+        } catch (e: FileNotFoundException){
         }
 
 
