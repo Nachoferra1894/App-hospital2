@@ -42,6 +42,10 @@ class ReadWriteUserData {
             return Json.decodeFromString(stringBuilder.toString())
         }
 
+        fun clear(context: Context){
+            context.deleteFile("user_info")
+        }
+
     }
 
 }

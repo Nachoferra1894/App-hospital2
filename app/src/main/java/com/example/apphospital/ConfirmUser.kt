@@ -18,6 +18,7 @@ class ConfirmUser : AppCompatActivity() {
 
         confirm_continue_text.setOnClickListener {
             startActivity(Intent(this,Home::class.java))
+            finish()
         }
 
 

@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         try {
             val user = ReadWriteUserData.read(this)
             startActivity(Intent(this, Welcome::class.java))
+            finish()
         } catch (e: FileNotFoundException){
         }
 
@@ -76,6 +77,7 @@ class MainActivity : AppCompatActivity() {
                                 ReadWriteUserData.write(userLoaded,applicationContext)
                                 loadingPanelLogin.visibility = View.INVISIBLE
                                 startActivity(Intent(this, Home::class.java))
+                                finish()
                                 //TODO chequear cotra
 
                             }

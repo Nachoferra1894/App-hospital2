@@ -1,11 +1,13 @@
 package com.example.apphospital
 
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.example.apphospital.classes.UserClass
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.serialization.decodeFromString
@@ -38,6 +40,19 @@ class Home : AppCompatActivity() {
 
         completar_registroDiario_btn.setOnClickListener{
             startActivity(Intent(this,ScreenSlidePagerActivity::class.java))
+        }
+
+        home_log_out.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+                .setTitle("Log Out")
+                .setMessage("Estas seguro que queres deslogearte?")
+                .setPositiveButton(android.R.string.yes,DialogInterface.OnClickListener { dialog, which ->
+                    ReadWriteUserData.clear(applicationContext)
+                    startActivity(Intent(this,MainActivity::class.java))
+                })
+                .setNegativeButton(android.R.string.no,null)
+                .show()
+
         }
 
 

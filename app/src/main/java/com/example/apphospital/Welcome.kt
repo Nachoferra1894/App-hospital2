@@ -22,6 +22,7 @@ class Welcome:AppCompatActivity() {
             i.putExtra("name",user.fullname)
             i.putExtra("avatar",index)
             startActivity(i)
+            finish()
         }
         welcome_negate.setOnClickListener {
             finish()

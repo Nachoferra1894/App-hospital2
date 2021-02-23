@@ -135,6 +135,7 @@ class RegisterDetailsForm() : FragmentActivity(),Retriever {
                 val toast = Toast.makeText(applicationContext, text, duration)
                 toast.show()
                 startActivity(Intent(this, Home::class.java))
+                finish()
             } else {
                 loadingPanelRegister.visibility = View.INVISIBLE
                 val text = "Usuario ya existe"
@@ -142,6 +143,7 @@ class RegisterDetailsForm() : FragmentActivity(),Retriever {
                 val toast = Toast.makeText(applicationContext, text, duration)
                 toast.show()
                 startActivity(Intent(this, MainActivity::class.java))
+                finish()
             }
         }
                 .addOnFailureListener { exception ->
