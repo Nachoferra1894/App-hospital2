@@ -18,8 +18,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Home"
-            android:screenOrientation="portrait"
-            android:noHistory="true"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" />

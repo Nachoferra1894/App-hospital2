@@ -27,6 +27,7 @@ class ScreenSlidePagerActivity() : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_viewpager_diario)
+        viewPager = pager
 
         val adapter = DatPagerAdapter(this)
         val fragsList = listOf(Item1Fragment(), Item2Fragment(), Item3Fragment(),Item4Fragment())

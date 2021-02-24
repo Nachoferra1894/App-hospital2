@@ -25,6 +25,8 @@ class Welcome:AppCompatActivity() {
             finish()
         }
         welcome_negate.setOnClickListener {
+            ReadWriteUserData.clear(applicationContext)
+            startActivity(Intent(this,MainActivity::class.java))
             finish()
         }
 
