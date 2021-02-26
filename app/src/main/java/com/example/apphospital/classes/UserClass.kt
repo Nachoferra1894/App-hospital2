@@ -45,4 +45,6 @@ class UserClass {
         this.registerday = registerday
         this.image = image
     }
+
+
 }
