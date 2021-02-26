@@ -41,128 +41,137 @@
             app:srcCompat="@drawable/register_deco" />
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Nombre y apellido"
-            android:textColor="@color/gray"
-            android:textSize="16dp" />
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/nombreYApellido_edtxt_id"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_edittext"
-            android:paddingLeft="10dp"
-            android:maxLines="1"
-            android:inputType="text" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="DNI"
-            android:textColor="@color/gray"
-            android:textSize="16dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Nombre y apellido"
+                android:textColor="@color/gray"
+                android:textSize="16dp" />
 
-        <EditText
-            android:id="@+id/dni_edtxt_id"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_edittext"
-            android:paddingLeft="10dp"
-            android:maxLines="1"
-            android:inputType="text" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Genero"
-            android:textSize="16dp" />
-
-        <Spinner
-
-            android:id="@+id/sexos_spnr"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_edittext"
-            android:paddingLeft="5dp"
-            android:textColor="@color/gray" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Email"
-            android:textSize="16dp"
-            />
-
-        <EditText
-            android:id="@+id/email_edtxt_id"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/rounded_edittext"
-            android:inputType="textEmailAddress"
-            android:paddingLeft="10dp"
-            android:maxLines="1"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Fecha"
-            android:textSize="16dp" />
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/datePicker_btn_id"
+            <EditText
+                android:id="@+id/nombreYApellido_edtxt_id"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
-                android:background="@android:color/transparent" />
+                android:background="@drawable/rounded_edittext"
+                android:paddingLeft="10dp"
+                android:maxLines="1"
+                android:inputType="text" />
 
             <TextView
-                android:id="@+id/date_txtVw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="DNI"
+                android:textColor="@color/gray"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/dni_edtxt_id"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:paddingLeft="10dp"
+                android:maxLines="1"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Genero"
+                android:textSize="16dp" />
+
+            <Spinner
+
+                android:id="@+id/sexos_spnr"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/rounded_edittext"
                 android:paddingLeft="5dp"
-                android:paddingTop="10dp"
-                android:textColor="@color/gray"
-                android:textSize="20sp" />
+                android:textColor="@color/gray" />
 
-        </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textSize="16dp"
+                />
 
-        <Button
-            android:id="@+id/login_btn_login2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:height="52dp"
-            android:background="@drawable/btn_rounded_secondarycolor"
-            android:text="CONTINUAR"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            tools:ignore="OnClick" />
+            <EditText
+                android:id="@+id/email_edtxt_id"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Fecha"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/datePicker_btn_id"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:id="@+id/date_txtVw"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_btn_login2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:height="52dp"
+                android:background="@drawable/btn_rounded_secondarycolor"
+                android:text="CONTINUAR"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="OnClick" />
 
 
-    </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </LinearLayout>

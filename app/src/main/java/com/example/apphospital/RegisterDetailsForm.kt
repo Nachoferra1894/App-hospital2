@@ -22,6 +22,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_register_details_form.*
 
 
+
 private const val NUM_PAGES = 5
 
 class RegisterDetailsForm() : FragmentActivity(),Retriever {
