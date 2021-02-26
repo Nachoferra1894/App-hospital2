@@ -146,34 +146,13 @@ class ScreenSlidePagerActivity() : FragmentActivity(), Retriever {
             2 -> {
                 when (message.getInt("apetito")) {
                     0 -> {
-
+                        viewPager.currentItem = position + 1
                     }
                     1 -> {
-
+                        viewPager.currentItem = position + 1
                     }
                     2 -> {
-
-                    }
-                    3 -> {
-
-                    }
-                    4 -> {
-
-                    }
-                    5 -> {
-
-                    }
-                    6 -> {
-
-                    }
-                    7 -> {
-
-                    }
-                    8 -> {
-
-                    }
-                    9 -> {
-
+                        viewPager.currentItem = position + 1
                     }
                 }
             }
