@@ -142,52 +142,53 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/radio_1"
+                android:checked = "true"
+                android:id="@+id/radio_1_dolor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <RadioButton
-                android:id="@+id/radio_2"
+                android:id="@+id/radio_2_dolor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <RadioButton
-                android:id="@+id/radio_3"
+                android:id="@+id/radio_3_dolor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <RadioButton
-                android:id="@+id/radio_4"
+                android:id="@+id/radio_4_dolor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <RadioButton
-                android:id="@+id/radio_5"
+                android:id="@+id/radio_5_dolor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <RadioButton
-                android:id="@+id/radio_6"
+                android:id="@+id/radio_6_dolor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <RadioButton
-                android:id="@+id/radio_7"
+                android:id="@+id/radio_7_dolor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <RadioButton
-                android:id="@+id/radio_8"
+                android:id="@+id/radio_8_dolor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <RadioButton
-                android:id="@+id/radio_9"
+                android:id="@+id/radio_9_dolor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <RadioButton
-                android:id="@+id/radio_10"
+                android:id="@+id/radio_10_dolor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 

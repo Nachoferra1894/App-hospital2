@@ -8,12 +8,16 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import com.example.apphospital.Fragments.registerUtilities.Retriever
 import com.example.apphospital.R
 
 
 // Here ":" symbol is indicate that LoginFragment
 // is child class of Fragment Class
-class Item5Fragment : Fragment() {
+
+private const val position = 4
+
+class Item5Fragment(val retriever: Retriever) : Fragment() {
     override fun onCreateView(
 /*        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View = inflater.inflate(R.layout.item5_registrodiario_actividad_fisica, container, false)
@@ -25,72 +29,31 @@ class Item5Fragment : Fragment() {
         val btn2 = v.findViewById<View>(R.id.btn_Limitado)
         val btn3 = v.findViewById<View>(R.id.btn_Amgios1h)
         val btn4 = v.findViewById<View>(R.id.btn_Amigos2h)
+        var answer = Bundle()
 
         btn1.setOnClickListener {
-            val fragment = Item6Fragment()
-            val fragmentManager = requireActivity().supportFragmentManager
-            fragmentManager.beginTransaction()
-                .setCustomAnimations(R.anim.slide_in,R.anim.fade_out,R.anim.fade_in,R.anim.slide_out)
-                .replace(R.id.frameForFragments, fragment)
-                .addToBackStack(null)
-                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                .commit()
+            answer.putInt("ctcto", 0)
+            retriever.retrieve(answer, position)
         }
 
         btn2.setOnClickListener {
-            val fragment = Item6Fragment()
-            val fragmentManager = requireActivity().supportFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentManager.beginTransaction()
-                .setCustomAnimations(R.anim.slide_in,R.anim.fade_out,R.anim.fade_in,R.anim.slide_out)
-                .replace(R.id.frameForFragments, fragment)
-                .addToBackStack(null)
-                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                .commit()
+            answer.putInt("ctcto", 1)
+            retriever.retrieve(answer, position)
         }
 
         btn3.setOnClickListener {
-            val fragment = Item6Fragment()
-            val fragmentManager = requireActivity().supportFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentManager.beginTransaction()
-                .setCustomAnimations(R.anim.slide_in,R.anim.fade_out,R.anim.fade_in,R.anim.slide_out)
-                .replace(R.id.frameForFragments, fragment)
-                .addToBackStack(null)
-                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                .commit()
+            answer.putInt("ctcto", 2)
+            retriever.retrieve(answer, position)
         }
 
         btn4.setOnClickListener {
-            val fragment = Item6Fragment()
-            val fragmentManager = requireActivity().supportFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentManager.beginTransaction()
-                .setCustomAnimations(R.anim.slide_in,R.anim.fade_out,R.anim.fade_in,R.anim.slide_out)
-                .replace(R.id.frameForFragments, fragment)
-                .addToBackStack(null)
-                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                .commit()
+            answer.putInt("ctcto", 3)
+            retriever.retrieve(answer, position)
         }
 
 
         return v
 
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        requireActivity().title="Fragment5"
-    }
-
-    @Override
-    override fun onCreateAnimation(transit: Int, enter: Boolean, nextAnim: Int): Animation? {
-        return if (enter) AnimationUtils.loadAnimation(
-            activity,
-            R.anim.fade_in
-        ) else AnimationUtils.loadAnimation(
-            activity, R.anim.fade_out
-        )
     }
 
 }

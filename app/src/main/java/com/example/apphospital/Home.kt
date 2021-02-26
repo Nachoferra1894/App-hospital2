@@ -1,4 +1,5 @@
 package com.example.apphospital
+import com.example.apphospital.*
 
 import android.content.DialogInterface
 import android.content.Intent
@@ -35,11 +36,11 @@ class Home : AppCompatActivity() {
 
 
         iv_avatar!!.setOnClickListener{
-            startActivity(Intent(this,SwitchAvatar::class.java))
+            startActivity(Intent(this, SwitchAvatar::class.java))
         }
 
         completar_registroDiario_btn.setOnClickListener{
-            startActivity(Intent(this,ScreenSlidePagerActivity::class.java))
+            startActivity(Intent(this, ScreenSlidePagerActivity::class.java))
         }
 
         home_log_out.setOnClickListener {
@@ -48,7 +49,7 @@ class Home : AppCompatActivity() {
                 .setMessage("Estas seguro que queres deslogearte?")
                 .setPositiveButton(android.R.string.yes,DialogInterface.OnClickListener { dialog, which ->
                     ReadWriteUserData.clear(applicationContext)
-                    startActivity(Intent(this,MainActivity::class.java))
+                    startActivity(Intent(this, MainActivity::class.java))
                 })
                 .setNegativeButton(android.R.string.no,null)
                 .show()

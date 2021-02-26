@@ -28,6 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15f639be-0d93-490b-adc8-183e37403786" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/classes/NoSwipePager.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -36,18 +37,31 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/App_Hospital.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/App_Hospital.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item1Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item1Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item2Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item2Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item3Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item3Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item4Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item4Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item5Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item5Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item6Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/daily/Item6Fragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Home.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Home.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/ScreenSlidePagerActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/ScreenSlidePagerActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Welcome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Welcome.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item1_registrodiario_estado_de_animo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item1_registrodiario_estado_de_animo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item2_registrodiario_dolor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item2_registrodiario_dolor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item3_registrodiario_apetito.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item3_registrodiario_apetito.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Hw]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -70,8 +84,8 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="layoutResourceFile" />
-        <option value="Kotlin Class" />
         <option value="valueResourceFile" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -91,12 +105,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android-custom-view/Users/federicovonstaszewski/Library/Android/sdk/sources/android-29/android/view/View.java_SELECTED" value="View" />
+    <property name="android-custom-view/Users/nachoferrari/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED" value="RecyclerView" />
+    <property name="android-custom-view/Users/nachoferrari/.gradle/caches/modules-2/files-2.1/androidx.viewpager2/viewpager2/1.0.0/3c3569044e6969f1ee5c3aa03b08e6717a2d782f/viewpager2-1.0.0-sources.jar!/androidx/viewpager2/widget/ViewPager2.java_SELECTED" value="ViewPager2" />
+    <property name="android-custom-view/Users/nachoferrari/Desktop/pruebas/App-hospital2/app/src/main/java/com/example/apphospital/classes/NoSwipePager.kt_SELECTED" value="NoSwipePager" />
+    <property name="android-custom-view/Users/nachoferrari/Desktop/pruebas/App-hospital2/app/src/main/java/com/example/apphospital/classes/custonViewPager.kt_SELECTED" value="CustomViewPager" />
+    <property name="android-custom-view/Users/nachoferrari/Library/Android/sdk/sources/android-29/android/view/View.java_SELECTED" value="View" />
+    <property name="android-custom-view/Users/nachoferrari/Library/Android/sdk/sources/android-29/android/view/ViewGroup.java_SELECTED" value="ViewGroup" />
     <property name="android-custom-viewC:/Users/Pc/.gradle/caches/modules-2/files-2.1/androidx.viewpager2/viewpager2/1.0.0/3c3569044e6969f1ee5c3aa03b08e6717a2d782f/viewpager2-1.0.0-sources.jar!/androidx/viewpager2/widget/ViewPager2.java_SELECTED" value="ViewPager2" />
     <property name="android-custom-viewC:/Users/Pc/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_SELECTED" value="View" />
     <property name="android-custom-viewC:/Users/Pc/AppData/Local/Android/Sdk/sources/android-30/android/widget/TextView.java_SELECTED" value="TextView" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="multi-representation-preview/Users/federicovonstaszewski/Library/Android/sdk/sources/android-29/android/view/View.java_selected" value="Custom views" />
+    <property name="multi-representation-preview/Users/nachoferrari/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_selected" value="Custom views" />
+    <property name="multi-representation-preview/Users/nachoferrari/.gradle/caches/modules-2/files-2.1/androidx.viewpager2/viewpager2/1.0.0/3c3569044e6969f1ee5c3aa03b08e6717a2d782f/viewpager2-1.0.0-sources.jar!/androidx/viewpager2/widget/ViewPager2.java_selected" value="Custom views" />
+    <property name="multi-representation-preview/Users/nachoferrari/Desktop/pruebas/App-hospital2/app/src/main/java/com/example/apphospital/classes/NoSwipePager.kt_selected" value="Custom views" />
+    <property name="multi-representation-preview/Users/nachoferrari/Desktop/pruebas/App-hospital2/app/src/main/java/com/example/apphospital/classes/custonViewPager.kt_selected" value="Custom views" />
+    <property name="multi-representation-preview/Users/nachoferrari/Library/Android/sdk/sources/android-29/android/view/View.java_selected" value="Custom views" />
+    <property name="multi-representation-preview/Users/nachoferrari/Library/Android/sdk/sources/android-29/android/view/ViewGroup.java_selected" value="Custom views" />
     <property name="multi-representation-previewC:/Users/Pc/.gradle/caches/modules-2/files-2.1/androidx.viewpager2/viewpager2/1.0.0/3c3569044e6969f1ee5c3aa03b08e6717a2d782f/viewpager2-1.0.0-sources.jar!/androidx/viewpager2/widget/ViewPager2.java_selected" value="Custom views" />
     <property name="multi-representation-previewC:/Users/Pc/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_selected" value="Custom views" />
     <property name="multi-representation-previewC:/Users/Pc/AppData/Local/Android/Sdk/sources/android-30/android/widget/TextView.java_selected" value="Custom views" />
@@ -180,7 +206,9 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" goal="" />
+      </method>
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -306,9 +334,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="555" y="282" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1611984033406" />
-    <state x="413" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611983490264">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="310" y="154" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614260803531">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="310" y="154" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1614260803531" />
     <state x="413" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611983490264" />
     <state x="866" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1612307308259">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -352,54 +381,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="265" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611984105182" />
-    <state width="1363" height="208" key="GridCell.Tab.0.bottom" timestamp="1614142038244">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1614351215959">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614351215959" />
     <state width="1480" height="245" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612643838029" />
     <state width="1363" height="208" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1614142038244" />
     <state width="1363" height="208" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1614053192919" />
-    <state width="1363" height="208" key="GridCell.Tab.0.center" timestamp="1614142038244">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.810@0.25.1440.810" timestamp="1614266142707" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1614351215958">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1614351215958" />
     <state width="1480" height="245" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612643838029" />
     <state width="1363" height="208" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1614142038244" />
     <state width="1363" height="208" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1614053192918" />
-    <state width="1363" height="208" key="GridCell.Tab.0.left" timestamp="1614142038244">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.810@0.25.1440.810" timestamp="1614266142705" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1614351215957">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1614351215957" />
     <state width="1480" height="245" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612643838029" />
     <state width="1363" height="208" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1614142038244" />
     <state width="1363" height="208" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1614053192918" />
-    <state width="1363" height="208" key="GridCell.Tab.0.right" timestamp="1614142038244">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.810@0.25.1440.810" timestamp="1614266142704" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1614351215958">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1614351215958" />
     <state width="1480" height="245" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612643838029" />
     <state width="1363" height="208" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1614142038244" />
     <state width="1363" height="208" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1614053192918" />
-    <state width="1363" height="208" key="GridCell.Tab.1.bottom" timestamp="1614053734946">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.810@0.25.1440.810" timestamp="1614266142706" />
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom" timestamp="1614351215961">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614351215961" />
     <state width="1480" height="261" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612643813569" />
     <state width="1363" height="208" key="GridCell.Tab.1.bottom/0.23.1440.821@0.23.1440.821" timestamp="1614053734946" />
     <state width="1363" height="208" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1614042692163" />
-    <state width="1363" height="208" key="GridCell.Tab.1.center" timestamp="1614053734945">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.25.1440.810@0.25.1440.810" timestamp="1614181986446" />
+    <state width="1398" height="245" key="GridCell.Tab.1.center" timestamp="1614351215960">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1614351215960" />
     <state width="1480" height="261" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612643813569" />
     <state width="1363" height="208" key="GridCell.Tab.1.center/0.23.1440.821@0.23.1440.821" timestamp="1614053734945" />
     <state width="1363" height="208" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1614042692163" />
-    <state width="1363" height="208" key="GridCell.Tab.1.left" timestamp="1614053734945">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="245" key="GridCell.Tab.1.center/0.25.1440.810@0.25.1440.810" timestamp="1614181986445" />
+    <state width="1398" height="245" key="GridCell.Tab.1.left" timestamp="1614351215959">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1614351215959" />
     <state width="1480" height="261" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612643813569" />
     <state width="1363" height="208" key="GridCell.Tab.1.left/0.23.1440.821@0.23.1440.821" timestamp="1614053734945" />
     <state width="1363" height="208" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1614042692162" />
-    <state width="1363" height="208" key="GridCell.Tab.1.right" timestamp="1614053734946">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state width="1398" height="245" key="GridCell.Tab.1.left/0.25.1440.810@0.25.1440.810" timestamp="1614181986445" />
+    <state width="1398" height="245" key="GridCell.Tab.1.right" timestamp="1614351215960">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="245" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1614351215960" />
     <state width="1480" height="261" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612643813569" />
     <state width="1363" height="208" key="GridCell.Tab.1.right/0.23.1440.821@0.23.1440.821" timestamp="1614053734946" />
     <state width="1363" height="208" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1614042692163" />
+    <state width="1398" height="245" key="GridCell.Tab.1.right/0.25.1440.810@0.25.1440.810" timestamp="1614181986445" />
     <state x="263" y="102" key="MergeDialog" timestamp="1612220880127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -414,9 +459,10 @@
     <state x="519" y="265" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612218756551" />
     <state x="389" y="232" key="Vcs.Push.Dialog.v2/0.23.1440.821@0.23.1440.821" timestamp="1614117901304" />
     <state x="389" y="233" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1614053259211" />
-    <state x="635" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614137992676">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="635" y="389" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614344193130">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="635" y="389" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1614344193130" />
     <state x="847" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612638659673" />
     <state x="635" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.821@0.23.1440.821" timestamp="1614137992676" />
     <state x="917" y="267" key="refactoring.ChangeSignatureDialog" timestamp="1612311257842">
@@ -433,14 +479,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/apphospital/ReadWriteUserData.kt</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/apphospital/Fragments/register/SmokerFragment.kt</url>
           <line>31</line>
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/apphospital/ReadWriteUserData.kt</url>
-          <line>22</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/apphospital/RegisterDetailsForm.kt</url>
+          <line>157</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
