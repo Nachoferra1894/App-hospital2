@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
 import com.example.apphospital.Fragments.registerUtilities.Retriever
 import com.example.apphospital.R
@@ -18,8 +19,18 @@ class DiabetesFragment(val retriever: Retriever):Fragment() {
             savedInstanceState: Bundle?
     ): View = inflater.inflate(R.layout.diabetes_slide, container, false)
 
+    override fun onStart() {
+        super.onStart()
+        onResume()
+    }
+
     override fun onResume() {
         super.onResume()
+
+        val fadeIn = AnimationUtils.loadAnimation(activity,R.anim.fade_in)
+        diabetic_ly.startAnimation(fadeIn)
+        diabetic_ly.visibility=View.VISIBLE
+
         var answer = Bundle()
 
         btn_diabetesyes.setOnClickListener {
@@ -31,5 +42,10 @@ class DiabetesFragment(val retriever: Retriever):Fragment() {
             answer.putBoolean("db",false)
             retriever.retrieve(answer, position)
         }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        diabetic_ly.visibility=View.INVISIBLE
     }
 }

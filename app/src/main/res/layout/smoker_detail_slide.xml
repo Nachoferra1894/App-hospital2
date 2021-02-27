@@ -55,6 +55,8 @@
             android:gravity="center">
 
             <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/smkdt_catn_ly"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -79,6 +81,8 @@
             </LinearLayout>
 
             <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/smkdt_tmp_ly"
                 android:layout_marginTop="50dp"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"

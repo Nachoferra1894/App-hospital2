@@ -50,6 +50,8 @@
         android:layout_below="@+id/top1">
 
         <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/diabetic_ly"
             android:layout_centerHorizontal="true"
             android:layout_width="300dp"
             android:layout_height="280dp"

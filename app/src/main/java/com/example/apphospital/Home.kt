@@ -5,6 +5,8 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -55,7 +57,12 @@ class Home : AppCompatActivity() {
                 .show()
 
         }
+        val moveUp = AnimationUtils.loadAnimation(this,R.anim.slide_up)
+        homeLayout4.startAnimation(moveUp)
+        homeLayout3.startAnimation(moveUp)
 
+        homeLayout4.visibility = View.VISIBLE
+        homeLayout3.visibility = View.VISIBLE
 
     }
 
@@ -68,6 +75,20 @@ class Home : AppCompatActivity() {
         super.onResume()
         loadData()
         UserImageChanger.changeAvatar(id_avatar,index)
+        val moveUp = AnimationUtils.loadAnimation(this,R.anim.slide_up)
+
+        homeLayout4.startAnimation(moveUp)
+        homeLayout3.startAnimation(moveUp)
+
+        homeLayout4.visibility = View.VISIBLE
+        homeLayout3.visibility = View.VISIBLE
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+        homeLayout4.visibility = View.INVISIBLE
+        homeLayout3.visibility = View.INVISIBLE
     }
 
 }
