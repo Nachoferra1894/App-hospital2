@@ -22,6 +22,7 @@ import kotlinx.serialization.json.encodeToJsonElement
 import java.io.FileNotFoundException
 import java.io.FileOutputStream
 
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
 
         login_txt_register.setOnClickListener {
-            startActivity(Intent(this,datosDelUsuario::class.java))
+            startActivity(Intent(this,datosMedicos::class.java))
         }
 
 
@@ -63,18 +64,27 @@ class MainActivity : AppCompatActivity() {
 
                         .addOnSuccessListener {document ->
                             if(document.exists()){
-
-                                val userLoaded = UserClass(document.getString("fullname"),
-                                document.getString("dni"),document.getBoolean("gender"),
-                                document.getString("birthday"),document.getString("medic"),
-                                document.getString("place"),
-                                document.getString("etnia"),
-                                document.getString("id"),
-                                document.get<SmokeClass>("smoke",SmokeClass::class.java),
-                                document.get<DiabeticClass>("diabetic",DiabeticClass::class.java),document.getBoolean("hip"),
-                                document.getBoolean("epoc"),document.getBoolean("acv"),
-                                document.getBoolean("heartAttack"),document.getString("registerDay"),
-                                document.getString("image"))
+                                val userLoaded = com.example.apphospital.classes.UserClass(
+                                    document.getString("fullname"),
+                                    document.getString("dni"),
+                                    document.getBoolean("gender"),
+                                    document.getString("birthday"),
+                                    document.getString("medic"),
+                                    document.getString("place"),
+                                    document.getString("etnia"),
+                                    document.getString("id"),
+                                    document.get<SmokeClass>("smoke", SmokeClass::class.java),
+                                    document.get<DiabeticClass>(
+                                        "diabetic",
+                                        DiabeticClass::class.java
+                                    ),
+                                    document.getBoolean("hip"),
+                                    document.getBoolean("epoc"),
+                                    document.getBoolean("acv"),
+                                    document.getBoolean("heartAttack"),
+                                    document.getString("registerDay"),
+                                    document.getString("image")
+                                )
 
                                 ReadWriteUserData.write(userLoaded,applicationContext)
                                 loadingPanelLogin.visibility = View.INVISIBLE
