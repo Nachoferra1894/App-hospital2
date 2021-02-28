@@ -58,8 +58,7 @@ class showExcel : AppCompatActivity() {
         viewOfSintomas.setAdapter(adaptador)
 
         viewOfSintomas.setOnItemClickListener { parent, view, position, id ->
-
-            val myVal = listOfCTCAE
+            listOfGradosDeUnSintoma.clear()
             val nameOfSintoma = viewOfSintomas.text
             val index = listOfCTCAE.indexOf(nameOfSintoma.toString())
 
