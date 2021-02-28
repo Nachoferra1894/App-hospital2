@@ -15,7 +15,8 @@ class Welcome:AppCompatActivity() {
 
         UserImageChanger.changeAvatar(welcome_avatar,index)
 
-        welcome_title_first.setText(user.fullname)
+        welcome_title_first.setText(getFirstName(user.fullname))
+        welcome_name_full.setText(user.fullname)
 
         wlecome_confirm.setOnClickListener {
             val i = Intent(this,ConfirmUser::class.java)
@@ -30,5 +31,13 @@ class Welcome:AppCompatActivity() {
             finish()
         }
 
+    }
+    fun getFirstName(fullname:String?):String{
+        if(fullname != null) {
+            var index = fullname.indexOf(' ')
+            return (if (index >= 0) fullname.substring(0, index) else fullname)
+        }else{
+            return("")
+        }
     }
 }

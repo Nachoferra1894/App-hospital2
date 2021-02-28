@@ -1,5 +1,4 @@
 package com.example.apphospital
-import com.example.apphospital.*
 
 import android.content.DialogInterface
 import android.content.Intent
@@ -13,11 +12,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.apphospital.classes.UserClass
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.serialization.decodeFromString
-import kotlinx.serialization.json.Json
-import java.io.BufferedReader
-import java.io.FileInputStream
-import java.io.InputStreamReader
 
 class Home : AppCompatActivity() {
     var iv_avatar:ImageView?=null
@@ -58,10 +52,10 @@ class Home : AppCompatActivity() {
 
         }
         val moveUp = AnimationUtils.loadAnimation(this,R.anim.slide_up)
-        homeLayout4.startAnimation(moveUp)
+        homeLayout5.startAnimation(moveUp)
         homeLayout3.startAnimation(moveUp)
 
-        homeLayout4.visibility = View.VISIBLE
+        homeLayout5.visibility = View.VISIBLE
         homeLayout3.visibility = View.VISIBLE
 
     }
@@ -77,17 +71,17 @@ class Home : AppCompatActivity() {
         UserImageChanger.changeAvatar(id_avatar,index)
         val moveUp = AnimationUtils.loadAnimation(this,R.anim.slide_up)
 
-        homeLayout4.startAnimation(moveUp)
+        homeLayout5.startAnimation(moveUp)
         homeLayout3.startAnimation(moveUp)
 
-        homeLayout4.visibility = View.VISIBLE
+        homeLayout5.visibility = View.VISIBLE
         homeLayout3.visibility = View.VISIBLE
 
     }
 
     override fun onPause() {
         super.onPause()
-        homeLayout4.visibility = View.INVISIBLE
+        homeLayout5.visibility = View.INVISIBLE
         homeLayout3.visibility = View.INVISIBLE
     }
 

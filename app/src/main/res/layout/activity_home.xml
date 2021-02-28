@@ -76,14 +76,14 @@
     </LinearLayout>
 
     <LinearLayout
-        android:visibility="invisible"
-        android:layout_marginTop="40dp"
         android:id="@+id/homeLayout3"
-        android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/homeLayout2"
-        android:orientation="vertical">
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:visibility="visible">
 
 
         <View
@@ -96,9 +96,10 @@
 
     </LinearLayout>
 
+
+
     <RelativeLayout
-        android:visibility="invisible"
-        android:id="@+id/homeLayout4"
+        android:id="@+id/homeLayout5"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/homeLayout3"
@@ -109,7 +110,8 @@
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
-        android:paddingBottom="15dp">
+        android:paddingBottom="15dp"
+        android:visibility="visible">
 
 
         <LinearLayout
@@ -172,6 +174,83 @@
 
     </RelativeLayout>
 
+
+    <RelativeLayout
+        android:id="@+id/homeLayout7"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeLayout5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_rounded_lightbluecolor"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/homeLayout8"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_txtVw2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No te encuentras bien hoy?"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textAlignment="textEnd"
+                android:fontFamily="sans-serif-thin"
+                android:text="Completa y cuentanos que te sucede!"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/completar_sintomas_btn"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_rounded_white"
+                android:text="COMPLETAR"
+                android:textColor="@color/lightblue"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/homeLayout8"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/sintomas_icon" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_alignParentBottom="true"

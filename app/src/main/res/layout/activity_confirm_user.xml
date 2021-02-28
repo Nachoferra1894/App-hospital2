@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/continue_user_confirm"
-        android:src="@drawable/back_ilu3"
+        android:src="@drawable/welcome_deco"
         android:scaleType="fitXY"/>
 
     <LinearLayout
