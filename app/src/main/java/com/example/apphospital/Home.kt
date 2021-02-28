@@ -36,6 +36,10 @@ class Home : AppCompatActivity() {
         }
 
         completar_registroDiario_btn.setOnClickListener{
+            startActivity(Intent(this, ScreenSlidePagerActivity::class.java))
+        }
+
+        completar_sintomas_btn.setOnClickListener{
             startActivity(Intent(this, showExcel::class.java))
         }
 

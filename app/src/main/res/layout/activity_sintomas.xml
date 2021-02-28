@@ -33,21 +33,18 @@
                 android:layout_marginBottom="20dp"/>
 
             <AutoCompleteTextView
+                android:id="@+id/autoView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Seleccione su sintoma"
                 android:textSize="20dp"
-                android:textColor="@color/white"
-                android:completionThreshold="0"
-                android:backgroundTint="@drawable/sintomas_autocomplete"/>
-
-
-
+                android:textColor="@color/white" />
 
             <TextView
+                android:id="@+id/descrption_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                android:text="Seleccione un sintoma de la lista"
                 android:textSize="15dp"
                 android:layout_marginTop="30dp"
                 android:textColor="@color/white"/>
@@ -74,42 +71,39 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="60dp"
             android:layout_centerHorizontal="true"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Grado"
-                android:textSize="24dp"/>
+                android:textSize="24dp" />
 
-            <AutoCompleteTextView
-                android:layout_marginTop="10dp"
+            <Spinner
+                android:id="@+id/autoView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:completionThreshold="0"
                 android:hint="Seleccione su sintoma"
-                android:textSize="20dp"
-                android:completionThreshold="0"/>
+                android:textSize="20dp" />
 
             <TextView
-                 android:layout_width="wrap_content"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="descripcion"
-                android:textSize="15dp"
-                android:layout_marginTop="30dp"/>
+                android:layout_marginTop="30dp"
+                android:textSize="15dp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="50dp"/>
+                android:layout_marginTop="50dp" />
         </LinearLayout>
 
     </RelativeLayout>
-
-
-
 
 
 </android.widget.RelativeLayout>
