@@ -130,6 +130,7 @@ class RegisterDetailsForm() : FragmentActivity(),Retriever {
             if (!document.exists()) {
                 userPlace.set(user)
                 ReadWriteUserData.write(user, this)
+
                 loadingPanelRegister.visibility = View.INVISIBLE
                 val text = "Usuario registrado exitosamente"
                 val duration = Toast.LENGTH_SHORT

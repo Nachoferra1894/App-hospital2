@@ -40,7 +40,9 @@ class Home : AppCompatActivity() {
         }
 
         completar_sintomas_btn.setOnClickListener{
-            startActivity(Intent(this, showExcel::class.java))
+            val i = Intent(this, Symptoms::class.java)
+            i.putExtra("id",user.id)
+            startActivity(i)
         }
 
         home_log_out.setOnClickListener {
