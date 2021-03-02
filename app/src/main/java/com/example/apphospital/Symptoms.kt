@@ -1,5 +1,6 @@
 package com.example.apphospital
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -7,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Spinner
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.apphospital.classes.Symptom
 import com.google.firebase.firestore.FirebaseFirestore
@@ -84,44 +86,76 @@ class Symptoms : AppCompatActivity() {
         btn_symptoms_confirm.setOnClickListener {
             if(!viewOfSintomas.text.isEmpty()){
 
+
+
                 val date = Calendar.getInstance().time
 
                 val symptom= Symptom(viewOfSintomas.text.toString(),viewOfGrados.selectedItemPosition.toString(),
                                     date.toString())
 
                 loadingPanelSymptoms.visibility=View.VISIBLE
-                val db = FirebaseFirestore.getInstance()
 
+                if(userId != "a"){
+                    val db = FirebaseFirestore.getInstance()
 
-                val userPlace = db.collection("users").document(userId).collection("symptoms").document()
-                userPlace.get()
-                    .addOnSuccessListener { document ->
-                        if (!document.exists()) {
-                            userPlace.set(symptom)
-                            val text = "Sintoma registrado exitosamente"
-                            loadingPanelSymptoms.visibility=View.INVISIBLE
-                            val duration = Toast.LENGTH_SHORT
-                            val toast = Toast.makeText(applicationContext, text, duration)
-                            toast.show()
-                            startActivity(Intent(this, Home::class.java))
-                            finish()
-                        } else {
+                    val userPlace = db.collection("users").document(userId).collection("symptoms").document()
+                    userPlace.get()
+                        .addOnSuccessListener { document ->
+                            if (!document.exists()) {
+                                userPlace.set(symptom)
+                                val text = "Sintoma registrado exitosamente"
+                                loadingPanelSymptoms.visibility=View.INVISIBLE
+                                val duration = Toast.LENGTH_SHORT
+                                val toast = Toast.makeText(applicationContext, text, duration)
+                                toast.show()
+                                if(viewOfGrados.selectedItemPosition>=1){
+                                    val builder = AlertDialog.Builder(this)
+                                        .setTitle("Asistencia medica")
+                                        .setMessage("Se le recomienda ir al hospital")
+                                        .setPositiveButton("Ok",DialogInterface.OnClickListener { dialog, which ->
+                                            startActivity(Intent(this, Home::class.java))
+                                            finish()
+                                        })
+                                        .show()
+                                }
+                                else{
+                                    startActivity(Intent(this, Home::class.java))
+                                    finish()
+                                }
+
+                            } else {
+                                loadingPanelSymptoms.visibility=View.INVISIBLE
+                                val text = "A ocurrido un error"
+                                val duration = Toast.LENGTH_SHORT
+                                val toast = Toast.makeText(applicationContext, text, duration)
+                                toast.show()
+                                startActivity(Intent(this, Home::class.java))
+                                finish()
+                            }
+                        }
+                        .addOnFailureListener { exception ->
                             loadingPanelSymptoms.visibility=View.INVISIBLE
                             val text = "A ocurrido un error"
                             val duration = Toast.LENGTH_SHORT
                             val toast = Toast.makeText(applicationContext, text, duration)
-                            toast.show()
-                            startActivity(Intent(this, Home::class.java))
-                            finish()
                         }
+                }
+                else{
+                    if(viewOfGrados.selectedItemPosition>=1){
+                        val builder = AlertDialog.Builder(this)
+                            .setTitle("Asistencia medica")
+                            .setMessage("Se le recomienda ir al hospital")
+                            .setPositiveButton("Ok",DialogInterface.OnClickListener { dialog, which ->
+                                startActivity(Intent(this, MainActivity::class.java))
+                                finish()
+                            })
+                            .show()
                     }
-                    .addOnFailureListener { exception ->
-                        loadingPanelSymptoms.visibility=View.INVISIBLE
-                        val text = "A ocurrido un error"
-                        val duration = Toast.LENGTH_SHORT
-                        val toast = Toast.makeText(applicationContext, text, duration)
+                    else{
+                        startActivity(Intent(this, MainActivity::class.java))
+                        finish()
                     }
-
+                }
             }
         }
     }
