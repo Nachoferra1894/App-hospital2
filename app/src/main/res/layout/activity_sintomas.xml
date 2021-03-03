@@ -50,10 +50,11 @@
                 android:id="@+id/autoView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:completionThreshold="0"
                 android:hint="Seleccione su sintoma"
-                android:textSize="20dp"
                 android:textColor="@color/white"
-                android:completionThreshold="0"/>
+                android:textSize="20dp"
+                android:singleLine="true"/>
 
             <TextView
                 android:id="@+id/descrption_txt"
@@ -104,7 +105,8 @@
                 android:layout_marginTop="10dp"
                 android:completionThreshold="0"
                 android:hint="Seleccione su sintoma"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:theme="@style/MatchSpinnerTheme"/>
 
             <Button
                 android:id="@+id/btn_symptoms_confirm"

@@ -96,7 +96,8 @@
             android:background="@drawable/rounded_edittext"
             android:inputType="textEmailAddress"
             android:paddingLeft="5dp"
-            android:textColor="@color/gray" />
+            android:textColor="@color/gray"
+            android:singleLine="true"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -109,13 +110,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/datePicker_btn_id"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="@android:color/transparent" />
-
             <EditText
                 android:id="@+id/id_edtxt_datmed"
                 android:layout_width="300dp"
@@ -124,7 +118,8 @@
                 android:background="@drawable/rounded_edittext"
                 android:inputType="textEmailAddress"
                 android:paddingLeft="5dp"
-                android:textColor="@color/gray" />
+                android:textColor="@color/gray"
+                android:singleLine="true"/>
 
         </RelativeLayout>
 

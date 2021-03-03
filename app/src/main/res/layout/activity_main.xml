@@ -108,7 +108,8 @@
                     android:id="@+id/login_edtxt_id"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/rounded_edittext" />
+                    android:background="@drawable/rounded_edittext"
+                    android:singleLine="true"/>
 
             </LinearLayout>
 
@@ -129,7 +130,8 @@
                     android:id="@+id/login_edtxt_password"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/rounded_edittext" />
+                    android:background="@drawable/rounded_edittext"
+                    android:singleLine="true"/>
 
             </LinearLayout>
 

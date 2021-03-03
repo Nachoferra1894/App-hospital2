@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.apphospital.classes.Symptom
+import com.example.apphospital.classes.hideKeyboard
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_register_details_form.*
 import kotlinx.android.synthetic.main.activity_sintomas.*
@@ -73,6 +74,7 @@ class Symptoms : AppCompatActivity() {
             val nameOfSintoma = viewOfSintomas.text
             val index = listOfCTCAE.indexOf(nameOfSintoma.toString())
 
+            hideKeyboard()
             listOfGradosDeUnSintoma.add(listOfGrado1[index])
             listOfGradosDeUnSintoma.add(listOfGrado2[index])
             listOfGradosDeUnSintoma.add(listOfGrado3[index])
