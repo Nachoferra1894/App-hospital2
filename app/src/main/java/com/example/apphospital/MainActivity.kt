@@ -37,13 +37,7 @@ class MainActivity : AppCompatActivity() {
 
 
         login_txt_register.setOnClickListener {
-            startActivity(Intent(this,datosMedicos::class.java))
-        }
-
-        login_txt_emergency.setOnClickListener {
-            val i = Intent(this,Symptoms::class.java)
-            i.putExtra("id","a")
-            startActivity(i)
+            startActivity(Intent(this,datosDelUsuario::class.java))
         }
 
 
