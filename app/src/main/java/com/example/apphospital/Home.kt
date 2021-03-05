@@ -8,7 +8,6 @@ import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.apphospital.classes.UserClass
 import kotlinx.android.synthetic.main.activity_home.*
@@ -44,7 +43,7 @@ class Home : AppCompatActivity() {
         }
 
         home_log_out.setOnClickListener {
-            val builder = AlertDialog.Builder(this)
+            val builder = AlertDialog.Builder(this, R.style.MyDialogTheme)
                 .setTitle("Log Out")
                 .setMessage("Estas seguro que queres deslogearte?")
                 .setPositiveButton(android.R.string.yes,DialogInterface.OnClickListener { dialog, which ->
