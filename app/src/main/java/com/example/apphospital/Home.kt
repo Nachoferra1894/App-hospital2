@@ -23,8 +23,6 @@ class Home : AppCompatActivity() {
         loadData()
 
         iv_avatar = findViewById<ImageView>(R.id.id_avatar)
-
-        Toast.makeText(applicationContext, user!!.image,Toast.LENGTH_SHORT).show();
         user.image?.let { Integer.parseInt(it) }?.let { UserImageChanger.changeAvatar(id_avatar,index) }
 
         val tv_fullname:TextView = findViewById(R.id.id_home_fullname)
