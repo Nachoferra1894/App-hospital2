@@ -23,7 +23,6 @@ class Home : AppCompatActivity() {
         loadData()
 
         iv_avatar = findViewById<ImageView>(R.id.id_avatar)
-
         user.image?.let { Integer.parseInt(it) }?.let { UserImageChanger.changeAvatar(id_avatar,index) }
 
         val tv_fullname:TextView = findViewById(R.id.id_home_fullname)
@@ -45,7 +44,7 @@ class Home : AppCompatActivity() {
         }
 
         home_log_out.setOnClickListener {
-            val builder = AlertDialog.Builder(this, R.style.MyDialogTheme)
+            val builder = AlertDialog.Builder(this)
                 .setTitle("Log Out")
                 .setMessage("Estas seguro que queres deslogearte?")
                 .setPositiveButton(android.R.string.yes,DialogInterface.OnClickListener { dialog, which ->
@@ -59,9 +58,12 @@ class Home : AppCompatActivity() {
         val moveUp = AnimationUtils.loadAnimation(this,R.anim.slide_up)
         homeLayout5.startAnimation(moveUp)
         homeLayout3.startAnimation(moveUp)
+        homeLayout7.startAnimation(moveUp)
 
         homeLayout5.visibility = View.VISIBLE
         homeLayout3.visibility = View.VISIBLE
+        homeLayout7.visibility= View.VISIBLE
+
 
     }
 
@@ -78,9 +80,11 @@ class Home : AppCompatActivity() {
 
         homeLayout5.startAnimation(moveUp)
         homeLayout3.startAnimation(moveUp)
+        homeLayout7.startAnimation(moveUp)
 
         homeLayout5.visibility = View.VISIBLE
         homeLayout3.visibility = View.VISIBLE
+        homeLayout7.visibility = View.VISIBLE
 
     }
 
@@ -88,6 +92,7 @@ class Home : AppCompatActivity() {
         super.onPause()
         homeLayout5.visibility = View.INVISIBLE
         homeLayout3.visibility = View.INVISIBLE
+        homeLayout7.visibility = View.INVISIBLE
     }
 
 }
