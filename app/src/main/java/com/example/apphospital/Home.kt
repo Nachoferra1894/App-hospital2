@@ -60,9 +60,12 @@ class Home : AppCompatActivity() {
         val moveUp = AnimationUtils.loadAnimation(this,R.anim.slide_up)
         homeLayout5.startAnimation(moveUp)
         homeLayout3.startAnimation(moveUp)
+        homeLayout7.startAnimation(moveUp)
 
         homeLayout5.visibility = View.VISIBLE
         homeLayout3.visibility = View.VISIBLE
+        homeLayout7.visibility= View.VISIBLE
+
 
     }
 
@@ -79,9 +82,11 @@ class Home : AppCompatActivity() {
 
         homeLayout5.startAnimation(moveUp)
         homeLayout3.startAnimation(moveUp)
+        homeLayout7.startAnimation(moveUp)
 
         homeLayout5.visibility = View.VISIBLE
         homeLayout3.visibility = View.VISIBLE
+        homeLayout7.visibility = View.VISIBLE
 
     }
 
@@ -89,6 +94,7 @@ class Home : AppCompatActivity() {
         super.onPause()
         homeLayout5.visibility = View.INVISIBLE
         homeLayout3.visibility = View.INVISIBLE
+        homeLayout7.visibility = View.INVISIBLE
     }
 
 }
