@@ -80,7 +80,8 @@ class Symptoms : AppCompatActivity() {
             listOfGradosDeUnSintoma.add(listOfGrado3[index])
             listOfGradosDeUnSintoma.add(listOfGrado4[index])
             listOfGradosDeUnSintoma.add(listOfGrado5[index])
-            val anotherAdaptador = ArrayAdapter<String>(this@Symptoms, R.layout.spinner_item, listOfGradosDeUnSintoma)
+            val anotherAdaptador = ArrayAdapter<String>(this@Symptoms, R.layout.textview_with_padding, listOfGradosDeUnSintoma)
+            anotherAdaptador.setDropDownViewResource(R.layout.textview_with_padding)
             viewOfGrados.setAdapter(anotherAdaptador)
             descrption_txt.setText(listOfDefinicion[index])
         }

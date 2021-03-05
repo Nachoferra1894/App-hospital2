@@ -73,7 +73,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="-10dp"
+        android:layout_marginTop="-20dp"
         android:layout_below="@id/sintomas_bottom"
         android:id="@+id/register_deco"
         android:src="@drawable/register_deco"/>
@@ -106,15 +106,14 @@
                 android:completionThreshold="0"
                 android:hint="Seleccione su sintoma"
                 android:textSize="20dp"
-                android:theme="@style/MatchSpinnerTheme"/>
+                android:theme="@style/MatchSpinnerTheme" />
 
             <Button
                 android:id="@+id/btn_symptoms_confirm"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="50dp"
-                android:text="Confirmar"
-                />
+                android:text="Confirmar" />
         </LinearLayout>
 
     </RelativeLayout>
